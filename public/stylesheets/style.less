@@ -4,9 +4,10 @@
 @red: #C94D4D;
 @yellow: #FFFF7E;
 @purple: #C45CC4;
+@orange: #FFAD33;
 
-@top: 80px; // padding on top of the containers
-@dim: 50px; // the dimensions of the picture
+@top: 100px; // padding on top of the containers
+@dim: 100px; // the dimensions of the picture
 
 html, body {
   height: 100%;
@@ -38,6 +39,12 @@ html, body {
   //  text-shadow: 0px 1px 1px (@darkened - #222); 
 }
 
+.border-radius (@radius) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
 .picture {
   height: @dim;
   width: @dim;
@@ -46,23 +53,26 @@ html, body {
   top: -(@top + 0.5 * @dim);
   margin: 0 auto;
   margin-bottom: (-1 * @dim);
+  .border-radius(0.5 * @dim);
 }
 
 .header {
   .coloring (@green);
 }
 .education {
-  .coloring (@purple);
-}
-.dev-skills {
   .coloring (@blue);
 }
-.biz-skills {
-  .coloring (@yellow);
+.dev-skills {
+  .coloring (@purple);
 }
-
-footer {
+.biz-skills {
   .coloring (@red);
+}
+.contact {
+  .coloring (@orange);
+}
+footer {
+  .coloring (@yellow);
   text-align: center;
   padding: 20px;
 }
