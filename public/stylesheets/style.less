@@ -14,13 +14,12 @@ html, body {
 }
 
 .container {
+  padding: 0;
   font-family: 'Lato', sans-serif;
   font-size: 18px;
-
   > div {
     display: block;
-    padding: @top 20%;
-    min-height: 100%;
+    padding: @top 30%;
   }
 }
 
@@ -32,13 +31,16 @@ html, body {
 }
 
 .header {
-  .coloring (@header-col);
+  .coloring (@green);
 }
 .education {
-  .coloring (@edu-col);
+  .coloring (@purple);
 }
-.skills {
-  .coloring (@skills-col);
+.dev-skills {
+  .coloring (@blue);
+}
+.biz-skills {
+  .coloring (@yellow);
 }
 
 footer {
