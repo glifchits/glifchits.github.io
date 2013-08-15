@@ -55,4 +55,10 @@ html
           love to hear just about anything constructive you have to 
           say — whether you're interested in hiring, or you're
           just sharing an interesting article!
+        form(action='submit')
+          fieldset
+            input(type='text', id='email', name='sender', placeholder='your email address')
+            input(type='text', id='subject', name='subject', placeholder='subject')
+            textarea(name='message', placeholder='message')
+            button(type='submit') Send
       footer George Lifchits, 2013
