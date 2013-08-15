@@ -6,8 +6,11 @@
 @purple: #C45CC4;
 @orange: #FFAD33;
 
-@top: 100px; // padding on top of the containers
+@top: 130px; // padding on top of the containers
 @dim: 120px; // the dimensions of the picture
+@bgsize: 80%;
+@font-size: 18px;
+@footer-size: (0.75 * @font-size);
 
 html, body {
   height: 100%;
@@ -17,7 +20,7 @@ html, body {
 .container {
   padding: 0;
   font-family: 'Lato', sans-serif;
-  font-size: 18px;
+  font-size: @font-size;
   > div {
     display: block;
     @media (max-width: 600px) {
@@ -49,7 +52,10 @@ html, body {
   height: @dim;
   width: @dim;
   position: relative;
-  background-color: #aaa;
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: (0.82 * @dim);
   top: -(@top + 0.5 * @dim);
   margin: 0 auto;
   margin-bottom: (-1 * @dim);
@@ -66,19 +72,30 @@ html, body {
     @root: 'https://en.gravatar.com/userimage/26544714/93f2c6b9c0600ccdc069047092fcb792.jpg?size=';
     @url: "@{root}@{dim}"; 
     background-image: url(@url);
+    background-size: @dim;
   }
 }
 .dev-skills {
   .coloring (@purple);
+  .picture {
+    background-image: url('/images/laptop.png');
+  }
 }
 .biz-skills {
   .coloring (@red);
+  .picture {
+    background-image: url('/images/business.png');
+  }
 }
 .contact {
   .coloring (@orange);
+  .picture {
+    background-image: url('/images/contact.png');
+  }
 }
 footer {
   .coloring (@yellow);
   text-align: center;
-  padding: 20px;
+  font-size: @footer-size;
+  padding: (0.2 * @top);
 }
