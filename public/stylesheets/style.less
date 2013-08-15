@@ -19,7 +19,15 @@ html, body {
   font-size: 18px;
   > div {
     display: block;
-    padding: @top 30%;
+    @media (max-width: 600px) {
+      padding: @top 7%;
+    }
+    @media (min-width: 601px) and (max-width: 1000px) {
+      padding: @top 15%;
+    }
+    @media (min-width: 1001px) {
+      padding: @top 25%;
+    }
   }
 }
 
