@@ -23,5 +23,11 @@ $(document).ready(function(){
     else
       $(this).removeClass('valid');
   });
+
+  // alert box close
+  $('.alert div').append('<div class="close"><i class="icon-remove"></i></div>');
+  $('.close i').click(function() {
+    $('.alert div').css('display','none');
+  });
 });
 
