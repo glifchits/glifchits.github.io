@@ -57,8 +57,11 @@ html
           just sharing an interesting article!
         form(action='submit')
           fieldset
-            input(type='text', id='email', name='sender', placeholder='your email address')
-            input(type='text', id='subject', name='subject', placeholder='subject')
-            textarea(name='message', placeholder='message')
+            input(type='text', id='email', name='sender', placeholder='your email address', autocomplete='off')
+            input(type='text', id='subject', name='subject', placeholder='subject', autocomplete='off')
+            textarea(name='message', placeholder='message', autocomplete='off')
             button(type='submit') Send
       footer George Lifchits, 2013
+      script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+      script(src='/javascripts/jquery.autosize-min.js')
+      script(src='/javascripts/glifchits.js') 
