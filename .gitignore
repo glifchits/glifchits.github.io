@@ -1,3 +1,5 @@
 /node_modules
 *.swp
 *.css
+*.DS_Store
+/public/javascripts/downloaded
