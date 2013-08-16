@@ -128,8 +128,28 @@ html, body {
     background-image: url('/images/business.png');
   }
 }
+
+.resume {
+  .coloring(@orange);
+  .picture {
+    background-image: url('/images/pencil.png');
+    background-size: contain;
+  }
+  table {
+    height: 100%;
+    width: 100%;
+    table-layout: static;
+    border-collapse: collapse;
+  }
+  iframe {
+    height: 880px;
+    width: 100%;
+  }
+}
+
 .contact {
-  .coloring (@orange);
+  @contact-col: @yellow;
+  .coloring (@contact-col);
   .picture {
     background-image: url('/images/contact.png');
   }
@@ -146,7 +166,7 @@ html, body {
       border: none;
       margin: @form-margin 0;
       padding: 9px;
-      background-color: (@orange+#999);
+      background-color: (@contact-col+#999);
     }
     #email {
       color: red; 
@@ -163,18 +183,18 @@ html, body {
       text-align: center;
     }
     button {
-      background-color: (@orange - #111);
+      background-color: (@contact-col - #111);
       border: none;
       padding: 10px 50px;
       margin: @form-margin 0;
     }
     button:hover {
-      background-color: (@orange - #222);
+      background-color: (@contact-col - #222);
     }
   }
 }
 footer {
-  .coloring (@yellow);
+  .coloring (white);
   text-align: center;
   font-size: @footer-size;
   padding: (0.2 * @top);
