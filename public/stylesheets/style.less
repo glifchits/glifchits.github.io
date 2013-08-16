@@ -40,7 +40,6 @@ html, body {
   @darkened: (@colour - @darken);
   background-color: @colour;
   color: @darkened;
-  //  text-shadow: 0px 1px 1px (@darkened - #222);
   a { 
     text-decoration: none;
     color: (@darkened - #222);
@@ -102,6 +101,7 @@ html, body {
     background-image: url('/images/contact.png');
   }
   fieldset {
+    @form-margin: 6px;
     border: none;
     padding: 0;
     margin: 0;
@@ -111,7 +111,7 @@ html, body {
       outline: none;
       //background-color: transparent;
       border: none;
-      margin: 6px 0;
+      margin: @form-margin 0;
       padding: 9px;
       background-color: (@orange+#999);
     }
@@ -124,6 +124,19 @@ html, body {
     textarea {
       resize: none;
       vertical-align: top;
+    }
+    .button {
+      width: 100%;
+      text-align: center;
+    }
+    button {
+      background-color: (@orange - #111);
+      border: none;
+      padding: 10px 50px;
+      margin: @form-margin 0;
+    }
+    button:hover {
+      background-color: (@orange - #222);
     }
   }
 }
