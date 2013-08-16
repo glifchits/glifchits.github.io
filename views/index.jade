@@ -1,5 +1,5 @@
 doctype 5
-html
+html(lang='en')
   // hi there, curious person! Thanks for taking a look at the source
   // of my little webpage here. I hope you like it — this website
   // is served by node.js, using jade templating to render the HTML
@@ -11,8 +11,12 @@ html
     link(rel='stylesheet', href='/stylesheets/normalize.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic')
+    link(href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css", rel="stylesheet")
 
   body
+    if message
+      .alert
+        div= message
     .container
       .header
         h1 George Lifchits
