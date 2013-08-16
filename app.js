@@ -5,7 +5,9 @@
 
 var express = require('express')
   , http = require('http')
-  , path = require('path');
+  , path = require('path')
+  , nodemailer = require('nodemailer')
+  , config = require('./config.js');
 
 var app = express();
 
@@ -26,9 +28,45 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', function(req, res){
-  res.render('index', { title: 'George Lifchits' });
+// home page
+app.get('/', function(req, res) {
+  res.render('index');
 }); 
+
+// handles emails
+app.post('/mail', function(req, res) {
+  var sender = req.body.sender;
+  var subject = req.body.subject;
+  var message = req.body.message;
+  console.log(sender, subject, message);
+  
+  var smtpTransport = nodemailer.createTransport("SMTP",{
+    service: "Gmail",
+    auth: {
+        user: config.email,
+        pass: config.emailPassword
+    }
+  });
+
+  console.log('config email '+config.email);
+  console.log('config emailpass '+config.emailPassword);
+
+  var mailOptions = {
+    from: sender,
+    to: 'george.lifchits@gmail.com',
+    subject: subject,
+    text: message
+  }
+
+  smtpTransport.sendMail(mailOptions, function(error, response){
+    if(error){
+        console.log(error);
+    }else{
+        console.log("Message sent: " + response.message);
+    }
+  });
+  res.render('index', { message: "Email sent!" });
+});
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
