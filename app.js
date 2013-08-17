@@ -36,8 +36,8 @@ app.get('/', function(req, res) {
 // handles emails
 app.post('/mail', function(req, res) {
   var sender = req.body.sender;
-  var subject = req.body.subject;
-  var message = req.body.message;
+  var subject = req.body.subject || '(No subject) Email from website contact';
+  var message = req.body.message || '<No message content>';
   console.log(sender, subject, message);
   
   var smtpTransport = nodemailer.createTransport("SMTP",{
@@ -48,9 +48,6 @@ app.post('/mail', function(req, res) {
     }
   });
 
-  console.log('config email '+config.email);
-  console.log('config emailpass '+config.emailPassword);
-
   var mailOptions = {
     from: sender,
     to: 'george.lifchits@gmail.com',
@@ -58,14 +55,19 @@ app.post('/mail', function(req, res) {
     text: message
   }
 
+
   smtpTransport.sendMail(mailOptions, function(error, response){
-    if(error){
-        console.log(error);
-    }else{
-        console.log("Message sent: " + response.message);
+    var resultMsg = '';
+    if(error) {
+      console.log("Error: " + error);
+      resultMsg = "An error occurred! Your email was not sent.";
     }
+    else {
+      console.log("Message sent: " + response.message);
+      resultMsg = "Email sent! I'll get back to you in a bit.";
+    }
+  res.render('index', { message: resultMsg });
   });
-  res.render('index', { message: "Email sent!" });
 });
 
 http.createServer(app).listen(app.get('port'), function(){
