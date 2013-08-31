@@ -10,6 +10,18 @@
 $(document).ready(function(){
   // textarea autoresize functionality
   $('textarea').autosize();
+
+  var iframeResize = function() { 
+    var padding = $(".container > div").css("padding-left");
+    padding = parseFloat(padding.substring(0, padding.length - 2))
+    var width = window.innerWidth - (2 * padding);
+    var height = width * (11/8.5);
+    $("#resume iframe").css('height', height);
+  };
+  iframeResize();
+
+  // resume autoresize
+  $(window).resize(iframeResize);
   
   // email validation
   var isValidEmail = function(email) {
