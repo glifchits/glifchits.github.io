@@ -146,6 +146,12 @@ html, body {
   }
 }
 
+.my-box-shadow(@colour, @size: 1px) {
+	@blur: 0px;
+	-webkit-box-shadow: inset 0px 0px @blur @size @colour;
+	box-shadow: inset 0px 0px @blur @size @colour;
+}
+
 .contact {
   @contact-col: @yellow;
   .coloring (@contact-col);
@@ -161,6 +167,7 @@ html, body {
       width: 100%;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
       box-sizing: border-box;
       outline: none;
       border: none;
@@ -168,11 +175,11 @@ html, body {
       padding: 9px;
       background-color: (@contact-col+#999);
     }
-    #email {
-      color: red; 
+    #email:focus {
+      .my-box-shadow(red);
     }
-    #email.valid {
-      color: green;
+    #email.valid:focus {
+      .my-box-shadow(green, 2px);
     }
     textarea {
       resize: none;
