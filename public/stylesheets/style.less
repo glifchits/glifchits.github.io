@@ -23,6 +23,7 @@ html, body {
   padding: 0;
   font-size: @font-size;
   line-height: round((@font-size * 1.7), 1);
+  text-align: justify;
   > div {
     display: block;
     @media (max-width: 600px) {
@@ -105,9 +106,9 @@ html, body {
 .education {
   .coloring (@blue);
   .picture {
-	// the root is the full url without the size parameter
+    // the root is the full url without the size parameter
     @root: 'https://en.gravatar.com/userimage/26544714/93f2c6b9c0600ccdc069047092fcb792.jpg?size=';
-	// for the URL used, the size parameter is set based on the dimension variable
+    // for the URL used, the size parameter is set based on the dimension variable
     @url: "@{root}@{dim}"; 
     background-image: url(@url);
     background-size: @dim;
@@ -181,11 +182,11 @@ html, body {
     }
     button, input[type=button] {
       width: 150px;
-      background-color: (@contact-col - #222);
       border: none;
       padding: 10px 50px;
       margin: @form-margin 0;
       align: middle;
+      background-color: (@contact-col - #222);
     }
     button:hover, input[type=button]:hover {
       background-color: (@contact-col - #333);
@@ -197,7 +198,7 @@ html, body {
 }
 
 footer {
-  .coloring (white);
+  .coloring (#fff);
   text-align: center;
   font-size: @footer-size;
   padding: (0.2 * @top);
