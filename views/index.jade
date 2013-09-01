@@ -1,11 +1,6 @@
 doctype 5
+//   hi there, source peeker.  I'll warn you that the source HTML looks disgusting, because it is a jade template rendered by node.js, and they don't pretty print the HTML they render. If you want to see where my actual work went, you can view the source of this website on my Github account. :)     
 html(lang='en')
-  // hi there, curious person! Thanks for taking a look at the source
-  // of my little webpage here. I hope you like it — this website
-  // is served by node.js, using jade templating to render the HTML
-  // and LESS stylesheets compiled to CSS! I've got the full
-  // source on my Github, if you'd like to take a closer look!
-
   head
     title George Lifchits
     link(rel='stylesheet', href='/stylesheets/normalize.css')
@@ -14,9 +9,11 @@ html(lang='en')
     link(href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css", rel="stylesheet")
 
   body
-    if message
-      .alert
-        div= message
+    .alert
+      .content
+        button.close
+          i.icon-remove
+        .message
     .container
       .header
         h1 George Lifchits
@@ -51,13 +48,11 @@ html(lang='en')
       .resume
         .picture
         p.
-          If you're having trouble viewing the resume below, download it 
-          <a href='/george-lifchits-resume.pdf'>here</a>.
-        #resume
-          table
-            tr
-              td
-                <iframe src="http://docs.google.com/viewer?url=http://www.georgelifchits.ca/static/other/george-lifchits-resume.pdf&embedded=true"></iframe>
+          You can take a look at my resume below.
+          (<a href="/george-lifchits-resume.pdf">Click</a> for the 
+          PDF version).
+        a#resume(href='/george-lifchits-resume.pdf')
+          img(src='images/resume.jpg')
       .contact
         .picture
         p.
@@ -69,13 +64,13 @@ html(lang='en')
           love to hear just about anything constructive you have to 
           say — whether you're interested in hiring, or you're
           just sharing an interesting article!
-        form(action='/mail', method='POST')
+        form
           fieldset
             input(type='text', id='email', name='sender', placeholder='your email address', autocomplete='off')
             input(type='text', id='subject', name='subject', placeholder='subject', autocomplete='off')
             textarea(name='message', placeholder='message', autocomplete='off')
             .button
-              button(type='submit') Send
+              input(type='button', id='send', value="Send") Send
       footer George Lifchits, 2013
       script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
       script(src='/javascripts/jquery.autosize-min.js')
