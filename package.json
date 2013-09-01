@@ -10,7 +10,7 @@
     "jade": "*",
     "less-middleware": "*",
     "nodemailer": "*"
-  }
+  },
   "repository" : { 
 	"type" : "git", 
 	"url" : "https://github.com/glifchits/georgelifchits.ca.git"
