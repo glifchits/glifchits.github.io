@@ -180,15 +180,18 @@ html, body {
       text-align: center;
     }
     button, input[type=button] {
-	  width: 150px;
-      background-color: (@contact-col - #111);
+      width: 150px;
+      background-color: (@contact-col - #222);
       border: none;
       padding: 10px 50px;
       margin: @form-margin 0;
-	  align: middle;
+      align: middle;
     }
     button:hover, input[type=button]:hover {
-      background-color: (@contact-col - #222);
+      background-color: (@contact-col - #333);
+    }
+    button:active, input[type=button]:active {
+      background-color: (@contact-col - #444);
     }
   }
 }
