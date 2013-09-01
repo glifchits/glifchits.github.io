@@ -10,7 +10,8 @@
     "express": "3.3.4",
     "jade": "*",
     "less-middleware": "*",
-    "nodemailer": "*"
+    "nodemailer": "*",
+	"path": "*"
   }
   "repository" :
     { "type" : "git"
