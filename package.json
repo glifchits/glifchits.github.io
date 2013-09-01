@@ -1,5 +1,5 @@
 {
-  "name": "application-name",
+  "name": "georgelifchits.ca",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -8,6 +8,11 @@
   "dependencies": {
     "express": "3.3.4",
     "jade": "*",
-    "less-middleware": "*"
+    "less-middleware": "*",
+    "nodemailer": "*"
+  },
+  "repository" : { 
+	"type" : "git", 
+	"url" : "https://github.com/glifchits/georgelifchits.ca.git"
   }
 }
