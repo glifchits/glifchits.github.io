@@ -6,7 +6,7 @@
 @purple: #C45CC4;
 @orange: #FFAD33;
 
-@top: 110px; // padding on top of the containers
+@top: 80px; // padding on top of the containers
 @dim: 120px; // the dimensions of the picture
 @bgsize: 80%;
 @font-size: 18px;
@@ -19,21 +19,30 @@ html, body {
   font-family: 'Lato', sans-serif;
 }
 
+/* mobile form elements reset */
+input, textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
+/* container > div is a "content block". The media queries
+   here define the padding size which affects the size of
+   the content blocks */
 .container {
   padding: 0;
   font-size: @font-size;
   line-height: round((@font-size * 1.7), 1);
-  text-align: justify;
   > div {
     display: block;
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
       padding: @top 7%;
     }
-    @media (min-width: 601px) and (max-width: 1000px) {
+    @media (min-width: 701px) and (max-width: 1000px) {
       padding: @top 15%;
     }
     @media (min-width: 1001px) {
       padding: @top 25%;
+      text-align: justify;
     }
   }
 }
@@ -98,9 +107,10 @@ html, body {
 
 .header {
   .coloring (@green);
-  text-align: center;
+  text-align: center !important;
   h1 {
     font-size: 50px;
+    line-height: 50px;
   }
 }
 .education {

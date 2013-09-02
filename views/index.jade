@@ -3,11 +3,18 @@ doctype 5
 html(lang='en')
   head
     title George Lifchits
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
     link(rel='stylesheet', href='/stylesheets/normalize.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic')
     link(href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css", rel="stylesheet")
-
+    script
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-40839981-3', 'georgelifchits.ca');
+      ga('send', 'pageview');
   body
     .alert
       .content
@@ -65,7 +72,7 @@ html(lang='en')
           welcome any criticisms and suggestions you have regarding my website.
         form
           fieldset
-            input(type='text', id='email', name='sender', placeholder='your email address', autocomplete='off')
+            input(type='email', id='email', name='sender', placeholder='your email address', autocomplete='off')
             input(type='text', id='subject', name='subject', placeholder='subject', autocomplete='off')
             textarea(name='message', placeholder='message', autocomplete='off')
             .button
