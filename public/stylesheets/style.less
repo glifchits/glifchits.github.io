@@ -35,15 +35,23 @@ input, textarea {
   text-align: justify;
   > div {
     display: block;
-    @media (max-width: 700px) {
+
+    @small: 700px;
+    @medium: 1000px;
+    @large: 1700px;
+
+    @media (max-width: @small) {
       padding: @top 7%;
       text-align: left;
     }
-    @media (min-width: 701px) and (max-width: 1000px) {
+    @media (min-width: (@small+1)) and (max-width: @medium) {
       padding: @top 15%;
     }
-    @media (min-width: 1001px) {
+    @media (min-width: (@medium+1)) and (max-width: @large) {
       padding: @top 25%;
+    }
+    @media (min-width: (@large+1)) {
+      padding: @top 30%;
     }
   }
 }
