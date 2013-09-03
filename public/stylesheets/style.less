@@ -25,6 +25,35 @@ input, textarea {
   -webkit-border-radius: 0;
 }
 
+@small: 700px;
+@medium: 1000px;
+@large: 1700px;
+
+@media (max-width: @small) {
+  #navbar {
+    display: none;
+  }
+  .container > div {
+    padding: @top 7%;
+    text-align: left;
+  }
+}
+@media (min-width: (@small+1)) and (max-width: @medium) {
+  .container > div {
+    padding: @top 15%;
+  }
+}
+@media (min-width: (@medium+1)) and (max-width: @large) {
+  .container > div {
+    padding: @top 25%;
+  }
+}
+@media (min-width: (@large+1)) {
+  .container > div {
+    padding: @top 30%;
+  }
+}
+
 /* container > div is a "content block". The media queries
    here define the padding size which affects the size of
    the content blocks */
@@ -35,24 +64,6 @@ input, textarea {
   text-align: justify;
   > div {
     display: block;
-
-    @small: 700px;
-    @medium: 1000px;
-    @large: 1700px;
-
-    @media (max-width: @small) {
-      padding: @top 7%;
-      text-align: left;
-    }
-    @media (min-width: (@small+1)) and (max-width: @medium) {
-      padding: @top 15%;
-    }
-    @media (min-width: (@medium+1)) and (max-width: @large) {
-      padding: @top 25%;
-    }
-    @media (min-width: (@large+1)) {
-      padding: @top 30%;
-    }
   }
 }
 
@@ -122,7 +133,7 @@ input, textarea {
     line-height: 50px;
   }
 }
-.education {
+#education {
   .coloring (@blue);
   .picture {
     // the root is the full url without the size parameter
@@ -133,20 +144,22 @@ input, textarea {
     background-size: @dim;
   }
 }
-.dev-skills {
+
+#dev-skills {
   .coloring (@purple);
   .picture {
     background-image: url('/images/laptop.png');
   }
 }
-.biz-skills {
+
+#biz-skills {
   .coloring (@red);
   .picture {
     background-image: url('/images/business.png');
   }
 }
 
-.resume {
+#resume {
   .coloring(@orange);
   .picture {
     background-image: url('/images/pencil.png');
@@ -157,7 +170,7 @@ input, textarea {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
-  a#resume {
+  a.resume {
     border: none;
     img {
      width: 100%;
@@ -180,7 +193,7 @@ input, textarea {
     transition: @type @time @easing;
 }
 
-.contact {
+#contact {
   @contact-col: @yellow;
   .coloring (@contact-col);
   .picture {
