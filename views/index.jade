@@ -17,6 +17,13 @@ html(lang='en')
       ga('create', 'UA-40839981-3', 'georgelifchits.ca');
       ga('send', 'pageview');
   body
+    ul#navbar
+      li 
+        a(href='#education') About Me
+      li 
+        a(href='#resume') Resume
+      li 
+        a(href='#contact') Contact
     .alert
       .content
         button.close
@@ -26,7 +33,7 @@ html(lang='en')
       .header
         h1 George Lifchits
         h3 A hacker who means business.
-      .education
+      #education
         .picture 
         p.
           I'm a student at Wilfrid Laurier University in Ontario,
@@ -35,7 +42,7 @@ html(lang='en')
           hope to graduate with two degrees — a Bachelor of Business
           Administration and a Bachelor's of Science in Computer
           Science — and I'm gaining work experience along the way!
-      .dev-skills
+      #dev-skills
         .picture
         p.
           I'm a skilled developer with experience using a variety of
@@ -44,7 +51,7 @@ html(lang='en')
           and a variety of web frameworks in Python like Django and
           Flask. In my spare time, I'm trying to gain a deep 
           understanding of C and learning Clojure.
-      .biz-skills
+      #biz-skills
         .picture
         p.
           That said, I also have knowledge of the business world and a
@@ -53,15 +60,15 @@ html(lang='en')
           a ton of Excel, VBA, and understand decision modeling using Crystal
           Ball and Arena. I've also taken accounting classes,
           business law, and so forth.
-      .resume
+      #resume
         .picture
         p.
           If you like, you can take a look at my resume below.
           <br/>(<a href="/george-lifchits-resume.pdf">Click</a> for  
           a PDF version to view in full screen).
-        a#resume(href='/george-lifchits-resume.pdf')
+        a.resume(href='/george-lifchits-resume.pdf')
           img(src='images/resume.jpg')
-      .contact
+      #contact
         .picture
         p.
           You can connect with me on 
