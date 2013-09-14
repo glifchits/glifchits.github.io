@@ -2,6 +2,6 @@
 *.css
 *.DS_Store
 /public/javascripts/downloaded
-node_modules/
+node_modules
 config.js
 prod/
