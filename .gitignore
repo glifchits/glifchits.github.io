@@ -1,5 +1,5 @@
 *.swp
-*.css
+style.css
 *.DS_Store
 /public/javascripts/downloaded
 node_modules
