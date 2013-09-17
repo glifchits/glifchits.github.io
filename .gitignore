@@ -5,3 +5,5 @@ style.css
 node_modules
 config.js
 prod/
+Procfile
+package.json
