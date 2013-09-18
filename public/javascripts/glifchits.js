@@ -45,7 +45,7 @@ $(document).ready(function(){
   alertAlign();
 
   // submit email
-  $('.contact #send').click(function() {
+  $('#contact #send').click(function() {
     var alertBox = $('.alert');
     var alertText = $('.alert .message');
 
