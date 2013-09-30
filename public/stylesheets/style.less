@@ -32,26 +32,26 @@ input, textarea {
 @media (max-width: @small) {
   #navbar {
     display: none;
-}
-.container > div {
-  padding: @top 7%;
-  text-align: left;
-}
+  }
+  .container > div {
+    padding: @top 7%;
+    text-align: left;
+  }
 }
 @media (min-width: (@small+1)) and (max-width: @medium) {
   .container > div {
     padding: @top 15%;
-}
+  }
 }
 @media (min-width: (@medium+1)) and (max-width: @large) {
   .container > div {
     padding: @top 25%;
-}
+  }
 }
 @media (min-width: (@large+1)) {
   .container > div {
     padding: @top 30%;
-}
+  }
 }
 
 /* container > div is a "content block". The media queries
@@ -64,7 +64,7 @@ the content blocks */
   text-align: justify;
   > div {
     display: block;
-}
+  }
 }
 
 .coloring (@colour) {
@@ -77,8 +77,8 @@ the content blocks */
     border-bottom: 1px solid @darkened;
     &:hover {
       border-bottom: 2px solid @darkened;
-}
-}
+    }
+  }
 }
 
 .border-radius (@radius) {
@@ -88,7 +88,7 @@ the content blocks */
 }
 
 .alert {
-  display: none;
+  //display: none;
   margin-top: 20px;
   position: fixed;
   z-index: 1;
@@ -107,6 +107,7 @@ the content blocks */
     -webkit-box-shadow: 0px @bottom @blur rgba(0, 0, 0, @opacity);
     -moz-box-shadow:    0px @bottom @blur rgba(0, 0, 0, @opacity);
     box-shadow:         0px @bottom @blur rgba(0, 0, 0, @opacity);
+  -webkit-filter: blur(20px);
     .border-radius(4px);
     .close {
       float: right;
@@ -114,11 +115,11 @@ the content blocks */
       background: none;
       border: none;
       line-height: 0;
-}
-.close:hover {
-  color: #222;
-}
-}
+    }
+    .close:hover {
+      color: #222;
+    }
+  }
 }
 
 .picture {
@@ -142,7 +143,7 @@ the content blocks */
   h1 {
     font-size: 50px;
     line-height: 50px;
-}
+  }
 }
 #education {
   .coloring (@blue);
@@ -153,21 +154,21 @@ the content blocks */
     @url: "@{root}@{dim}";
     background-image: url(@url);
     background-size: @dim;
-}
+  }
 }
 
 #dev-skills {
   .coloring (@purple);
   .picture {
     background-image: url('/images/laptop.png');
-}
+  }
 }
 
 #biz-skills {
   .coloring (@red);
   .picture {
     background-image: url('/images/business.png');
-}
+  }
 }
 
 #resume {
@@ -180,13 +181,13 @@ the content blocks */
     -o-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-}
-a.resume {
-  border: none;
-  img {
-    width: 100%;
-}
-}
+  }
+  a.resume {
+    border: none;
+    img {
+      width: 100%;
+    }
+  }
 }
 
 .my-box-shadow(@colour, @size: 1px) {
@@ -209,53 +210,53 @@ a.resume {
   .coloring (@contact-col);
   .picture {
     background-image: url('/images/contact.png');
-}
-fieldset {
-  @form-margin: 6px;
-  border: none;
-  padding: 0;
-  margin: 0;
-  input:not([type=button]), textarea {
-    width: 100%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    outline: none;
+  }
+  fieldset {
+    @form-margin: 6px;
     border: none;
-    margin: @form-margin 0;
-    padding: 9px;
-    background-color: (@contact-col+#999);
-}
-#email:focus {
-  .my-box-shadow(red, 2px);
-}
-#email.valid:focus {
-  .my-box-shadow(green);
-}
-textarea {
-  resize: none;
-  vertical-align: top;
-}
-.button {
-  width: 100%;
-  text-align: center;
-}
-button, input[type=button] {
-  width: 150px;
-  border: none;
-  padding: 10px 50px;
-  margin: @form-margin 0;
-  align: middle;
-  background-color: (@contact-col - #222);
-}
-button:hover, input[type=button]:hover {
-  background-color: (@contact-col - #333);
-}
-button:active, input[type=button]:active {
-  background-color: (@contact-col - #444);
-}
-}
+    padding: 0;
+    margin: 0;
+    input:not([type=button]), textarea {
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box;
+      outline: none;
+      border: none;
+      margin: @form-margin 0;
+      padding: 9px;
+      background-color: (@contact-col+#999);
+    }
+    #email:focus {
+      .my-box-shadow(red, 2px);
+    }
+    #email.valid:focus {
+      .my-box-shadow(green);
+    }
+    textarea {
+      resize: none;
+      vertical-align: top;
+    }
+    .button {
+      width: 100%;
+      text-align: center;
+    }
+    button, input[type=button] {
+      width: 150px;
+      border: none;
+      padding: 10px 50px;
+      margin: @form-margin 0;
+      align: middle;
+      background-color: (@contact-col - #222);
+    }
+    button:hover, input[type=button]:hover {
+      background-color: (@contact-col - #333);
+    }
+    button:active, input[type=button]:active {
+      background-color: (@contact-col - #444);
+    }
+  }
 }
 
 footer {
