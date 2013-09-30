@@ -32,31 +32,31 @@ input, textarea {
 @media (max-width: @small) {
   #navbar {
     display: none;
-  }
-  .container > div {
-    padding: @top 7%;
-    text-align: left;
-  }
+}
+.container > div {
+  padding: @top 7%;
+  text-align: left;
+}
 }
 @media (min-width: (@small+1)) and (max-width: @medium) {
   .container > div {
     padding: @top 15%;
-  }
+}
 }
 @media (min-width: (@medium+1)) and (max-width: @large) {
   .container > div {
     padding: @top 25%;
-  }
+}
 }
 @media (min-width: (@large+1)) {
   .container > div {
     padding: @top 30%;
-  }
+}
 }
 
 /* container > div is a "content block". The media queries
-   here define the padding size which affects the size of
-   the content blocks */
+here define the padding size which affects the size of
+the content blocks */
 .container {
   padding: 0;
   font-size: @font-size;
@@ -64,21 +64,21 @@ input, textarea {
   text-align: justify;
   > div {
     display: block;
-  }
+}
 }
 
 .coloring (@colour) {
   @darkened: (@colour - @darken);
   background-color: @colour;
   color: @darkened;
-  a { 
+  a {
     text-decoration: none;
     color: (@darkened - #222);
     border-bottom: 1px solid @darkened;
     &:hover {
       border-bottom: 2px solid @darkened;
-    }
-  }
+}
+}
 }
 
 .border-radius (@radius) {
@@ -88,14 +88,25 @@ input, textarea {
 }
 
 .alert {
-  display: none;
+  //display: none;
   margin-top: 20px;
   position: fixed;
   z-index: 1;
   .content {
     padding: 10px;
     padding-left: 30px;
+    @padding: 20px;
+    margin-left: @padding;
+    margin-right: @padding;
     background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,0.8);
+    border: 1px solid rgba(0,0,0,0.5);
+    @blur: 0px;
+    @opacity: 0.3;
+    @bottom: 3px;
+    -webkit-box-shadow: 0px @bottom @blur rgba(0, 0, 0, @opacity);
+    -moz-box-shadow:    0px @bottom @blur rgba(0, 0, 0, @opacity);
+    box-shadow:         0px @bottom @blur rgba(0, 0, 0, @opacity);
     .border-radius(4px);
     .close {
       float: right;
@@ -103,11 +114,11 @@ input, textarea {
       background: none;
       border: none;
       line-height: 0;
-    }
-    .close:hover {
-      color: #222;
-    }
-  }
+}
+.close:hover {
+  color: #222;
+}
+}
 }
 
 .picture {
@@ -131,7 +142,7 @@ input, textarea {
   h1 {
     font-size: 50px;
     line-height: 50px;
-  }
+}
 }
 #education {
   .coloring (@blue);
@@ -139,24 +150,24 @@ input, textarea {
     // the root is the full url without the size parameter
     @root: 'https://en.gravatar.com/avatar/99167ac3f433a7560367cb432109871d?s=';
     // for the URL used, the size parameter is set based on the dimension variable
-    @url: "@{root}@{dim}"; 
+    @url: "@{root}@{dim}";
     background-image: url(@url);
     background-size: @dim;
-  }
+}
 }
 
 #dev-skills {
   .coloring (@purple);
   .picture {
     background-image: url('/images/laptop.png');
-  }
+}
 }
 
 #biz-skills {
   .coloring (@red);
   .picture {
     background-image: url('/images/business.png');
-  }
+}
 }
 
 #resume {
@@ -169,28 +180,28 @@ input, textarea {
     -o-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-  }
-  a.resume {
-    border: none;
-    img {
-     width: 100%;
-    }
-  }
+}
+a.resume {
+  border: none;
+  img {
+    width: 100%;
+}
+}
 }
 
 .my-box-shadow(@colour, @size: 1px) {
-	@blur: 0px;
-	-webkit-box-shadow: inset 0px 0px @blur @size @colour;
-	box-shadow: inset 0px 0px @blur @size @colour;
+  @blur: 0px;
+  -webkit-box-shadow: inset 0px 0px @blur @size @colour;
+  box-shadow: inset 0px 0px @blur @size @colour;
 }
 
 .transition(@type, @time, @easing) {
-    -webkit-transition: @type @time @easing;
-    -o-transition: @type @time @easing;
-    -moz-transition: @type @time @easing;
-    -ms-transition: @type @time @easing;
-    -kthtml-transition: @type @time @easing;
-    transition: @type @time @easing;
+  -webkit-transition: @type @time @easing;
+  -o-transition: @type @time @easing;
+  -moz-transition: @type @time @easing;
+  -ms-transition: @type @time @easing;
+  -kthtml-transition: @type @time @easing;
+  transition: @type @time @easing;
 }
 
 #contact {
@@ -198,53 +209,53 @@ input, textarea {
   .coloring (@contact-col);
   .picture {
     background-image: url('/images/contact.png');
-  }
-  fieldset {
-    @form-margin: 6px;
+}
+fieldset {
+  @form-margin: 6px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  input:not([type=button]), textarea {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
     border: none;
-    padding: 0;
-    margin: 0;
-    input:not([type=button]), textarea {
-      width: 100%;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -ms-box-sizing: border-box;
-      box-sizing: border-box;
-      outline: none;
-      border: none;
-      margin: @form-margin 0;
-      padding: 9px;
-      background-color: (@contact-col+#999);
-    }
-    #email:focus {
-      .my-box-shadow(red, 2px);
-    }
-    #email.valid:focus {
-      .my-box-shadow(green);
-    }
-    textarea {
-      resize: none;
-      vertical-align: top;
-    }
-    .button {
-      width: 100%;
-      text-align: center;
-    }
-    button, input[type=button] {
-      width: 150px;
-      border: none;
-      padding: 10px 50px;
-      margin: @form-margin 0;
-      align: middle;
-      background-color: (@contact-col - #222);
-    }
-    button:hover, input[type=button]:hover {
-      background-color: (@contact-col - #333);
-    }
-    button:active, input[type=button]:active {
-      background-color: (@contact-col - #444);
-    }
-  }
+    margin: @form-margin 0;
+    padding: 9px;
+    background-color: (@contact-col+#999);
+}
+#email:focus {
+  .my-box-shadow(red, 2px);
+}
+#email.valid:focus {
+  .my-box-shadow(green);
+}
+textarea {
+  resize: none;
+  vertical-align: top;
+}
+.button {
+  width: 100%;
+  text-align: center;
+}
+button, input[type=button] {
+  width: 150px;
+  border: none;
+  padding: 10px 50px;
+  margin: @form-margin 0;
+  align: middle;
+  background-color: (@contact-col - #222);
+}
+button:hover, input[type=button]:hover {
+  background-color: (@contact-col - #333);
+}
+button:active, input[type=button]:active {
+  background-color: (@contact-col - #444);
+}
+}
 }
 
 footer {
