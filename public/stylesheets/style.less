@@ -6,8 +6,8 @@
 @purple: #C45CC4;
 @orange: #FFAD33;
 
-@top: 80px; // padding on top of the containers
-@dim: 120px; // the dimensions of the picture
+@top: 4em; // padding on top of the containers
+@dim: 6em; // the dimensions of the picture
 @bgsize: 80%;
 @font-size: 18px;
 @footer-size: (0.75 * @font-size);
@@ -33,24 +33,32 @@ input, textarea {
   #navbar {
     display: none;
   }
-  .container > div {
-    padding: @top 7%;
-    text-align: left;
+  .container {
+    > div, > header {
+      padding: @top 7%;
+      text-align: left;
+    }
   }
 }
 @media (min-width: (@small+1)) and (max-width: @medium) {
-  .container > div {
-    padding: @top 15%;
+  .container {
+    > div, > header {
+      padding: @top 15%;
+    }
   }
 }
 @media (min-width: (@medium+1)) and (max-width: @large) {
-  .container > div {
-    padding: @top 25%;
+  .container {
+    > div, > header {
+      padding: @top 25%;
+    }
   }
 }
 @media (min-width: (@large+1)) {
-  .container > div {
-    padding: @top 30%;
+  .container {
+    > div, > header {
+      padding: @top 30%;
+    }
   }
 }
 
@@ -62,7 +70,7 @@ the content blocks */
   font-size: @font-size;
   line-height: round((@font-size * 1.7), 1);
   text-align: justify;
-  > div {
+  > div, > header {
     display: block;
   }
 }
@@ -77,8 +85,8 @@ the content blocks */
     border-bottom: 1px solid @darkened;
     &:hover {
       border-bottom: 2px solid @darkened;
-    }
   }
+}
 }
 
 .border-radius (@radius) {
@@ -136,7 +144,7 @@ the content blocks */
   border: 3px solid #fff;
 }
 
-.header {
+header {
   .coloring (@green);
   text-align: center !important;
   h1 {
@@ -150,7 +158,8 @@ the content blocks */
     // the root is the full url without the size parameter
     @root: 'https://en.gravatar.com/avatar/99167ac3f433a7560367cb432109871d?s=';
     // for the URL used, the size parameter is set based on the dimension variable
-    @url: "@{root}@{dim}";
+    @pic-size: 400px;
+    @url: "@{root}@{pic-size}";
     background-image: url(@url);
     background-size: @dim;
   }
