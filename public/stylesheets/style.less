@@ -95,6 +95,8 @@ the content blocks */
 #navbar {
   position: fixed;
   left: 50%;
+  z-index: 1;
+  margin-top: round(@top/2, 1);
   ul {
     position: relative;
     left: -50%;
@@ -102,9 +104,14 @@ the content blocks */
     list-style: none;
     margin: 0;
     padding: 0;
+    @bordercol: rgba(0,0,0,0.5);
+    border: 1px solid @bordercol;
+    li:not(:first-child) {
+      border-left: 1px solid @bordercol;
+    }
     li {
       display: inline-block;
-      padding-right: 10px;
+      padding: 10px 15px;
       a {
         text-decoration: none;
       }
@@ -123,14 +130,14 @@ the content blocks */
     left: -50%;
     padding: 10px;
     padding-left: 30px;
-    background-color: rgba(255,255,255,0.85);
-    border: 1px solid rgba(0,0,0,0.5);
     @blur: 0px;
     @opacity: 0.3;
     @bottom: 3px;
     -webkit-box-shadow: 0px @bottom @blur rgba(0, 0, 0, @opacity);
     -moz-box-shadow:    0px @bottom @blur rgba(0, 0, 0, @opacity);
     box-shadow:         0px @bottom @blur rgba(0, 0, 0, @opacity);
+    background-color: rgba(255,255,255,0.85);
+    border: 1px solid rgba(0,0,0,0.5);
     .border-radius(4px);
     .close {
       float: right;
