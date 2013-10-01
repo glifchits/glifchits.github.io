@@ -33,17 +33,6 @@ $(document).ready(function(){
     return parseFloat(px.substring(0, px.length - 2));
   }
 
-  // alert box align
-  var alertAlign = function() {
-    var width = pxToFloat($('.container > div').css('width'));
-    var padLeft = pxToFloat($('.container > div').css('padding-left'));
-    var alertBox = $('.alert');
-    alertBox.css('width', width);
-    alertBox.css('margin-left', padLeft);
-  };
-  $(window).resize(alertAlign);
-  alertAlign();
-
   // submit email
   $('#contact #send').click(function() {
     var alertBox = $('.alert');
