@@ -30,9 +30,6 @@ input, textarea {
 @large: 1700px;
 
 @media (max-width: @small) {
-  #navbar {
-    display: none;
-  }
   .container {
     > div, > header {
       padding: @top 7%;
@@ -97,7 +94,11 @@ the content blocks */
 
 #navbar {
   position: fixed;
+  left: 50%;
   ul {
+    position: relative;
+    left: -50%;
+    text-align: center;
     list-style: none;
     margin: 0;
     padding: 0;
