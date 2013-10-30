@@ -99,39 +99,23 @@ the content blocks */
   margin-left: round(@top/2, 1);
   ul {
     position: relative;
-    text-align: center;
     list-style: none;
     margin: 0;
     padding: 0;
-    // these are aesthetic
-    li:nth-child(1) {
-      .colouring(@blue);
-    }
-    li:nth-child(2) {
-      .colouring(@purple);
-    }
-    li:nth-child(3) {
-      .colouring(@red);
-    }
-    li:nth-child(4) {
-      .colouring(@orange);
-    }
-    li:nth-child(5) {
-      .colouring(@yellow);
-    }
-    li:not(:first-child) {
-      //border-left: 1px solid @bordercol;
+    a {
+      text-decoration: none;
     }
     li {
+      box-sizing: border-box;
       display: block;
       padding: 10px 15px;
-      opacity: 0.5;
-      &:hover {
+      color: black;
+      opacity: 0.7;
+      border-left: 0px solid black;
+      transition: border-left 0.2s;
+      &:hover, &:focus {
         cursor: pointer;
-        opacity: 1;
-      }
-      a {
-        border-bottom: none !important;
+        border-left: 6px solid black;
       }
     }
   }
