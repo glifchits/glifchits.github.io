@@ -25,11 +25,21 @@ input, textarea {
   -webkit-border-radius: 0;
 }
 
+
+/* media query default values */
+#navbar {
+  margin-top: round(@top/2, 1);
+  margin-left: round(@top/2, 1);
+}  
+
 @small: 700px;
 @medium: 1000px;
 @large: 1700px;
 
 @media (max-width: @small) {
+  #navbar {
+    display: none;
+  }
   .container {
     > div, > header {
       padding: @top 7%;
@@ -38,6 +48,12 @@ input, textarea {
   }
 }
 @media (min-width: (@small+1)) and (max-width: @medium) {
+  #navbar {
+    font-size: 14px;
+    margin-top: round(@top/7, 1);
+    margin-left: 0;
+    width: 60px;
+  }  
   .container {
     > div, > header {
       padding: @top 15%;
@@ -45,6 +61,7 @@ input, textarea {
   }
 }
 @media (min-width: (@medium+1)) and (max-width: @large) {
+  // uses navbar default
   .container {
     > div, > header {
       padding: @top 25%;
@@ -52,6 +69,7 @@ input, textarea {
   }
 }
 @media (min-width: (@large+1)) {
+  // uses navbar default
   .container {
     > div, > header {
       padding: @top 30%;
@@ -95,8 +113,6 @@ the content blocks */
 #navbar {
   position: fixed;
   z-index: 1;
-  margin-top: round(@top/2, 1);
-  margin-left: round(@top/2, 1);
   ul {
     position: relative;
     list-style: none;
