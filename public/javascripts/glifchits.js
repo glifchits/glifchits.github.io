@@ -2,12 +2,12 @@
  * glifchits.js
  * 
  * George Lifchits
- * August 16-31, 2013
+ * 2013
  *
  * Javascript for my personal website
  */
 
-$(document).ready(function(){
+$(function(){
   // textarea autoresize functionality
   $('textarea').autosize();
 
@@ -32,6 +32,15 @@ $(document).ready(function(){
   var pxToFloat = function(px) {
     return parseFloat(px.substring(0, px.length - 2));
   }
+  
+  // smooth scroll
+  $('a[href*=#]').click(function() {
+      var target = $(this.hash);
+      $('html, body').animate({
+          scrollTop: target.offset().top
+      }, 300);
+      return false;
+  });
 
   // submit email
   $('#contact #send').click(function() {
