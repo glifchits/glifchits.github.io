@@ -181,7 +181,7 @@ the content blocks */
   top: -(@top + 0.5 * @dim);
   margin: 0 auto;
   margin-bottom: (-1 * @dim);
-  .border-radius(0.5 * @dim);
+  .border-radius(50%);
   border: 3px solid #fff;
 }
 
@@ -199,7 +199,7 @@ header {
     // the root is the full url without the size parameter
     @root: 'https://en.gravatar.com/avatar/99167ac3f433a7560367cb432109871d?s=';
     // for the URL used, the size parameter is set based on the dimension variable
-    @pic-size: 400px;
+    @pic-size: 200px;
     @url: "@{root}@{pic-size}";
     background-image: url(@url);
     background-size: @dim;
