@@ -8,7 +8,7 @@ html(lang='en')
     link(rel='stylesheet', href='stylesheets/normalize.css')
     link(rel='stylesheet', href='stylesheets/style.css')
     link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic')
-    link(href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css", rel="stylesheet")
+    link(href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css", rel="stylesheet")
     script(src='javascripts/ga.js')
   body
     #navbar
@@ -68,20 +68,29 @@ html(lang='en')
       #contact
         .picture
         p.
-          You can connect with me on
-          <a href='http://ca.linkedin.com/in/georgelifchits/'>LinkedIn</a>,
-          <a href='https://github.com/glifchits'>Github</a>,
-          <a href='https://www.facebook.com/george.lifchits'>Facebook</a>,
-          or send me an email using the form below. You can contact me for any
-          constructive reason, or just to say hey! I also welcome any criticisms
-          and suggestions you have regarding my website.
-        form
-          fieldset
-            input(type='email', id='email', name='sender', placeholder='your email address', autocomplete='off')
-            input(type='text', id='subject', name='subject', placeholder='subject', autocomplete='off')
-            textarea(name='message', placeholder='message', autocomplete='off')
-            .button
-              input(type='button', id='send', value="Send")
+          You can connect with me on:
+        ul
+          li
+            i(class='fa fa-linkedin-square')
+            a(href='http://ca.linkedin.com/in/georgelifchits/') LinkedIn
+            |,
+          li
+            i(class='fa fa-github')
+            a(href='https://github.com/glifchits') Github
+            |,
+          li
+            i(class='fa fa-facebook-square')
+            a(href='https://www.facebook.com/george.lifchits') Facebook
+            |, or
+          li
+            i(class='fa fa-envelope')
+            a(href='mailto:me@georgelifchits.ca') email
+            |.
+        p.
+          Please contact me with employment opportunities, constructive feedback,
+          YouTube videos of amazing bass players, or for any reason whatsoever!
+          I love talking to people and would equally love to hear from you. Connect
+          with me in the way you're most comfortable with.
       footer George Lifchits, 2014
       script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
       script(src='javascripts/jquery.autosize-min.js')
