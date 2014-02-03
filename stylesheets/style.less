@@ -260,51 +260,17 @@ header {
   .picture {
     background-image: url('../images/contact.png');
   }
-  fieldset {
-    @form-margin: 6px;
-    border: none;
+  ul {
     padding: 0;
-    margin: 0;
-    input:not([type=button]), textarea {
-      width: 100%;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -ms-box-sizing: border-box;
-      box-sizing: border-box;
-      outline: none;
-      border: none;
-      margin: @form-margin 0;
-      padding: 9px;
-      background-color: (@contact-col+#999);
-    }
-    #email:focus {
-      .my-box-shadow(red, 2px);
-    }
-    #email.valid:focus {
-      .my-box-shadow(green);
-    }
-    textarea {
-      resize: none;
-      vertical-align: top;
-    }
-    .button {
-      width: 100%;
-      text-align: center;
-    }
-    button, input[type=button] {
-      width: 150px;
-      border: none;
-      padding: 10px 50px;
-      margin: @form-margin 0;
-      align: middle;
-      background-color: (@contact-col - #222);
-    }
-    button:hover, input[type=button]:hover {
-      background-color: (@contact-col - #333);
-    }
-    button:active, input[type=button]:active {
-      background-color: (@contact-col - #444);
-    }
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+    padding-right: 0.3em;
+  }
+  i.fa {
+    width: 20px;
+    padding-right: 0.2em; 
   }
 }
 
