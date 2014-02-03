@@ -1,4 +1,4 @@
-doctype 5
+doctype html
 //   hi there, source peeker.  I'll warn you that the source HTML looks disgusting, because it is a jade template rendered by node.js, and they don't pretty print the HTML they render. If you want to see where my actual work went, you can view the source of this website on my Github account. :)
 html(lang='en')
   head
@@ -81,7 +81,7 @@ html(lang='en')
             input(type='text', id='subject', name='subject', placeholder='subject', autocomplete='off')
             textarea(name='message', placeholder='message', autocomplete='off')
             .button
-              input(type='button', id='send', value="Send") Send
+              input(type='button', id='send', value="Send")
       footer George Lifchits, 2014
       script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
       script(src='/javascripts/jquery.autosize-min.js')
