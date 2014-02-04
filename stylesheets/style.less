@@ -6,6 +6,12 @@
 @purple: #C45CC4;
 @orange: #FFAD33;
 
+@colour-education: @blue;
+@colour-developer: @purple;
+@colour-business: @red;
+@colour-resume: @orange;
+@colour-contact: @yellow;
+
 @top: 4em; // padding on top of the containers
 @dim: 6em; // the dimensions of the picture
 @bgsize: 80%;
@@ -128,6 +134,20 @@ header {
     li {
       margin: 5px;
       display: inline-block;
+      padding: 10px 15px;
+      border-radius: 25px;
+      background-color: @blue;
+      &:nth-child(1) { background-color: @colour-education; }
+      &:nth-child(2) { background-color: @colour-developer; }
+      &:nth-child(3) { background-color: @colour-business; }
+      &:nth-child(4) { background-color: @colour-resume; }
+      &:nth-child(5) { background-color: @colour-contact; }
+      a {
+        border: none;
+        &:hover {
+          border: none;
+        }
+      }
     }
   }
   .picture {
