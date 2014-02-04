@@ -131,22 +131,29 @@ header {
     list-style: none;
     margin: 0;
     padding: 0;
+    position: relative;
+    height: 3em;
     li {
+      position: relative;
       margin: 5px;
       display: inline-block;
       padding: 10px 15px;
+      .transition(all, 0.1s, ease-in-out);
       border-radius: 25px;
-      background-color: @blue;
       &:nth-child(1) { background-color: @colour-education; }
       &:nth-child(2) { background-color: @colour-developer; }
       &:nth-child(3) { background-color: @colour-business; }
       &:nth-child(4) { background-color: @colour-resume; }
       &:nth-child(5) { background-color: @colour-contact; }
+      border-bottom: 0px solid fade(black, 60%);
+      top: 0px;
+      &:hover {
+        border-bottom: 3px solid fade(black, 60%);
+        top: -3px;
+      }
       a {
         border: none;
-        &:hover {
-          border: none;
-        }
+        &:hover { border: none; }
       }
     }
   }
