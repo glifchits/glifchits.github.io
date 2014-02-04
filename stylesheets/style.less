@@ -25,21 +25,11 @@ input, textarea {
   -webkit-border-radius: 0;
 }
 
-
-/* media query default values */
-#navbar {
-  margin-top: round(@top/2, 1);
-  margin-left: round(@top/2, 1);
-}  
-
 @small: 700px;
 @medium: 1000px;
 @large: 1700px;
 
 @media (max-width: @small) {
-  #navbar {
-    display: none;
-  }
   .container {
     > div, > header {
       padding: @top 7%;
@@ -48,12 +38,6 @@ input, textarea {
   }
 }
 @media (min-width: (@small+1)) and (max-width: @medium) {
-  #navbar {
-    font-size: 14px;
-    margin-top: round(@top/7, 1);
-    margin-left: 0;
-    width: 60px;
-  }  
   .container {
     > div, > header {
       padding: @top 15%;
@@ -61,7 +45,6 @@ input, textarea {
   }
 }
 @media (min-width: (@medium+1)) and (max-width: @large) {
-  // uses navbar default
   .container {
     > div, > header {
       padding: @top 25%;
@@ -69,7 +52,6 @@ input, textarea {
   }
 }
 @media (min-width: (@large+1)) {
-  // uses navbar default
   .container {
     > div, > header {
       padding: @top 30%;
@@ -100,74 +82,14 @@ the content blocks */
     border-bottom: 1px solid @darkened;
     &:hover {
       border-bottom: 2px solid @darkened;
+    }
   }
-}
 }
 
 .border-radius (@radius) {
   -webkit-border-radius: @radius;
   -moz-border-radius: @radius;
   border-radius: @radius;
-}
-
-#navbar {
-  position: fixed;
-  z-index: 1;
-  ul {
-    position: relative;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    a {
-      text-decoration: none;
-    }
-    li {
-      box-sizing: border-box;
-      display: block;
-      padding: 10px 15px;
-      color: black;
-      opacity: 0.7;
-      border-left: 0px solid black;
-      transition: border-left 0.2s;
-      &:hover, &:focus {
-        cursor: pointer;
-        border-left: 6px solid black;
-      }
-    }
-  }
-}
-
-.alert {
-  display: none;
-  position: fixed;
-  left: 50%;
-  margin-top: 20px;
-  z-index: 2;
-  .content {
-    position: relative;
-    left: -50%;
-    padding: 10px;
-    padding-left: 30px;
-    @blur: 0px;
-    @opacity: 0.3;
-    @bottom: 3px;
-    -webkit-box-shadow: 0px @bottom @blur rgba(0, 0, 0, @opacity);
-    -moz-box-shadow:    0px @bottom @blur rgba(0, 0, 0, @opacity);
-    box-shadow:         0px @bottom @blur rgba(0, 0, 0, @opacity);
-    background-color: rgba(255,255,255,0.85);
-    border: 1px solid rgba(0,0,0,0.5);
-    .border-radius(4px);
-    .close {
-      float: right;
-      color: #777;
-      background: none;
-      border: none;
-      line-height: 0;
-    }
-    .close:hover {
-      color: #222;
-    }
-  }
 }
 
 .picture {
@@ -193,8 +115,21 @@ header {
     line-height: 50px;
   }
 }
-#education {
-  .colouring (@blue);
+
+#navbar {
+  .colouring (darken(@green, 10%));
+  margin: 0;
+  padding-bottom: 1em;
+  text-align: center;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      margin: 5px;
+      display: inline-block;
+    }
+  }
   .picture {
     // the root is the full url without the size parameter
     @root: 'https://en.gravatar.com/avatar/99167ac3f433a7560367cb432109871d?s=';
@@ -204,6 +139,10 @@ header {
     background-image: url(@url);
     background-size: @dim;
   }
+}
+
+#education {
+  .colouring (@blue);
 }
 
 #dev-skills {
