@@ -110,7 +110,16 @@ the content blocks */
   margin: 0 auto;
   margin-bottom: (-1 * @dim);
   .border-radius(50%);
-  border: 3px solid #fff;
+  border-bottom: 4px solid fade(black, 60%);
+  &:before {
+    content: "";
+    box-sizing: border-box;
+    height: @dim;
+    width: @dim;
+    display: block;
+    .border-radius(50%);
+    border: 3px solid white;
+  }
 }
 
 header {
@@ -165,6 +174,7 @@ header {
     @url: "@{root}@{pic-size}";
     background-image: url(@url);
     background-size: @dim;
+    border-color: #555;
   }
 }
 
@@ -191,11 +201,13 @@ header {
   .picture {
     background-image: url('../images/pencil.png');
     background-size: 22%;
+    /*
     -moz-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+    */
   }
   a.resume {
     border: none;
