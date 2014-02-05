@@ -104,7 +104,7 @@ header h1 {
   position: relative;
   height: 3em;
 }
-#navbar ul li {
+#navbar ul a {
   position: relative;
   margin: 5px;
   display: inline-block;
@@ -119,29 +119,29 @@ header h1 {
   border-bottom: 0px solid rgba(0, 0, 0, 0.6);
   top: 0px;
 }
-#navbar ul li:nth-child(1) {
+#navbar ul a:nth-child(1) {
   background-color: #008ae6;
 }
-#navbar ul li:nth-child(2) {
+#navbar ul a:nth-child(2) {
   background-color: #c45cc4;
 }
-#navbar ul li:nth-child(3) {
+#navbar ul a:nth-child(3) {
   background-color: #c94d4d;
 }
-#navbar ul li:nth-child(4) {
+#navbar ul a:nth-child(4) {
   background-color: #ffad33;
 }
-#navbar ul li:nth-child(5) {
+#navbar ul a:nth-child(5) {
   background-color: #ffff7e;
 }
-#navbar ul li:hover {
+#navbar ul a:hover {
   border-bottom: 3px solid rgba(0, 0, 0, 0.6);
   top: -3px;
 }
-#navbar ul li a {
+#navbar ul a a {
   border: none;
 }
-#navbar ul li a:hover {
+#navbar ul a a:hover {
   border: none;
 }
 #navbar .picture {
