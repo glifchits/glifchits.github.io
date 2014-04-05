@@ -1,0 +1,64 @@
+==================================================================
+https://keybase.io/george
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://georgelifchits.ca
+  * I am george (https://keybase.io/george) on keybase.
+  * I have a public key with fingerprint DE09 D386 BFA4 87FA D80A  8522 EE96 80CA 290E A9CD
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "de09d386bfa487fad80a8522ee9680ca290ea9cd",
+            "host": "keybase.io",
+            "key_id": "EE9680CA290EA9CD",
+            "uid": "c4879cce96563ab43c3bc09eccb86600",
+            "username": "george"
+        },
+        "service": {
+            "hostname": "georgelifchits.ca",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1396736057,
+    "expire_in": 157680000,
+    "prev": "7415d8a63ed17ff13dbe2f701db37938f6f7df2e5f2fe136318be12d2b37229e",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owFVUWlIFGEY3tUMj4QIkUxTGdFCtnWOnWshWfFYIkEwyi7Y5vhmd8p2dmdG09bK
+JPNgQwktFeqPCGWlSJYmgXYshZtFZBJBbIH2IzPCQrLD+kbqR9+fl+99jvd9eNsT
+o01R5mu/+j8kLDtbzOGJr7xpl6OeDSC8ItYi9gByBKwWSfa6gepTZa+O2BERoKxI
+MBQvcTaGljiRQTmGxHEAWIpBBQ5nUcCxgohYEI+iGQpow3MasMoK7MGPSxZht7jY
+4BcWQH5xAVtYBLGqVUCAtqwgQDuSIjjeRggEL6AsEASeoSgUNYgaUL3cUQDZbqCo
+boCcsCCwVy0LwNjYGPwfXilLgkfWNavAQblPVXRFUCoh7NF1n91Q67U+g34M8K6/
+Ri5e9oowOhRUA1WTFS9ixyBT0GXDGSNYiiYolKQtCKjxySpwyQaDpGEs+IwxoBpa
+0jaMFBmOIoCI0ZKEESIPcIlGMZEnaJZgJEqiRQkHpIRLACMoAmN4gOEiDmEcZwFi
+RPN7FcRug2tybmipyW4vp1epMHeLOW2NyRxlWhsTZRzPFB+3/t9JhydjTXP4/m4y
+8/nwyFLMZNO2sivlNXmXmnP85Q2DT/smSyeaneir61mN4YeOoorM/JtdQ1PvZrN3
+orvTAqfdHu3Liic5Yfp36Wx2u2V+YdNinbKvLaO+I3FPUnzfj/udXUkLW0dfhlKD
+Az+z4vcODQ4fniNnrHfF3rjI1R2NwdaaJcCF2JWxtmczYxf7cdGR3jDyJqSPXQj1
+JkdStl9OKAuGkx5/PJefm/Z24kH+aCHWUxFe/nz8rHOzo++OdT5S97rDnzvOPmpu
++34wNXJj3afOvPNPupe5EkdPRmvs+O17JwNT72+9OLMxuGFEisk4VOLISTmQ7vzW
+5LdGn3IuDkxXbfkD
+=TVz7
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/george
+
+==================================================================
