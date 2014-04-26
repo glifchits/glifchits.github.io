@@ -33,19 +33,19 @@ textarea {
     margin-left: 0;
     width: 60px;
   }
-  .container > div,
+  .container > section,
   .container > header {
     padding: 4em 15%;
   }
 }
 @media (min-width: 1001px) and (max-width: 1700px) {
-  .container > div,
+  .container > section,
   .container > header {
     padding: 4em 25%;
   }
 }
 @media (min-width: 1701px) {
-  .container > div,
+  .container > section,
   .container > header {
     padding: 4em 30%;
   }
