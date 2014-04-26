@@ -22,7 +22,7 @@ html(lang='en')
       header
         h1 George Lifchits
         h3 A hacker who means business.
-      #education
+      section#education
         .picture
         p.
           I'm a student at Wilfrid Laurier University in Ontario, Canada. I'm in
@@ -30,7 +30,7 @@ html(lang='en')
           option. This means that I hope to graduate with two degrees &mdash; a
           Bachelor of Business Administration and a Bachelor's of Science in
           Computer Science &mdash; and I'm gaining work experience along the way!
-      #dev-skills
+      section#dev-skills
         .picture
         p.
           I'm a skilled developer with substantial experience working on the
@@ -39,7 +39,7 @@ html(lang='en')
           else you'd like to throw at me! In my spare time I like to take free
           online courses via Coursera and build webapps to get experience
           working with some new tech skill I haven't used before.
-      #biz-skills
+      section#biz-skills
         .picture
         p.
           I have knowledge of the business world and a firm understanding of
@@ -47,7 +47,7 @@ html(lang='en')
           done business cases. I have learned a ton of Excel, VBA, and
           understand decision modeling using Crystal Ball and Arena. I've also
           taken accounting classes, business law, and so forth.
-      #resume
+      section#resume
         .picture
         p If you like, you can take a look at my resume below.
           br
@@ -56,7 +56,7 @@ html(lang='en')
           |  for a PDF version to view in full screen).
         a.resume(href='george-lifchits-resume.pdf')
           img(src='images/resume.jpg')
-      #contact
+      section#contact
         .picture
         p.
           You can connect with me on:
@@ -86,10 +86,11 @@ html(lang='en')
       link(rel='stylesheet', href='http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css')
       link(rel='stylesheet', href='stylesheets/style.css')
       link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic')
-      link(href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css", rel="stylesheet")
-      script(src='javascripts/ga.js')
+      link(rel='stylesheet', href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css")
       script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
       script(src='javascripts/jquery.autosize-min.js')
       script(src='javascripts/glifchits.js')
       script(type="text/javascript")
         | var heap=heap||[];heap.load=function(a){window._heapid=a;var b=document.createElement("script");b.type="text/javascript",b.async=!0,b.src=("https:"===document.location.protocol?"https:":"http:")+"//cdn.heapanalytics.com/js/heap.js";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c);var d=function(a){return function(){heap.push([a].concat(Array.prototype.slice.call(arguments,0)))}},e=["identify","track"];for(var f=0;f<e.length;f++)heap[e[f]]=d(e[f])}; heap.load("351944280");
+      script(type="text/javascript")
+        | (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','http://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-40839981-3', 'georgelifchits.ca'); ga('send', 'pageview');
