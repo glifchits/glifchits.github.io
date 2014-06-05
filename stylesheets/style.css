@@ -20,7 +20,7 @@ textarea {
   #navbar {
     display: none;
   }
-  .container > div,
+  .container > section,
   .container > header {
     padding: 4em 7%;
     text-align: left;
