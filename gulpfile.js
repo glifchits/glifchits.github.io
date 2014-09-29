@@ -11,23 +11,19 @@ gulp.task('styles', function() {
 	gulp.src('stylesheets/*.less')
 		.pipe(less())
 		.pipe(concat('style.css'))
-		.pipe(gulp.dest('stylesheets'))
-		.pipe(refresh(server));
+		.pipe(gulp.dest('stylesheets'));
 });
 
 gulp.task('html', function() {
 	gulp.src('index.jade')
-		.pipe(jade({
-			pretty: true
-		}))
-		.pipe(embedlr())
-		.pipe(gulp.dest('.'))
-		.pipe(refresh(server));
+		.pipe(jade({ pretty: true }));
 });
 
 gulp.task('lr-server', function() {
     server.listen(35729, function(err) {
-        if(err) return console.log(err);
+        if (err) {
+			return console.log(err);
+		}
     });
 });
 
@@ -38,4 +34,4 @@ gulp.task('default', ['styles', 'html'], function() {
 	gulp.watch('*.jade', function(event) {
 		gulp.run('html');
 	});
-})
+});
