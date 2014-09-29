@@ -1,0 +1,29 @@
+{
+  "name": "glifchits.github.io",
+  "version": "0.0.0",
+  "description": "glifchits.github.io ===================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/glifchits/glifchits.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/glifchits/glifchits.github.io/issues"
+  },
+  "homepage": "https://github.com/glifchits/glifchits.github.io",
+  "devDependencies": {
+    "gulp": "^3.7.0",
+    "gulp-concat": "^2.2.0",
+    "gulp-embedlr": "^0.5.2",
+    "gulp-jade": "^0.5.0",
+    "gulp-less": "^1.2.3",
+    "gulp-livereload": "^2.1.0",
+    "gulp-watch": "^0.6.5",
+    "tiny-lr": "0.0.7"
+  }
+}
