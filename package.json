@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "glifchits.github.io",
   "devDependencies": {
+    "http-server": "^0.8.0",
     "jade": "^1.9.2",
     "less": "^2.5.0"
   },
@@ -11,6 +12,7 @@
     "build:css": "lessc stylesheets/style.less > stylesheets/style.css",
     "build:html": "jade -P index.jade",
     "build": "npm run clean && npm run build:css && npm run build:html",
+    "serve": "http-server .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
