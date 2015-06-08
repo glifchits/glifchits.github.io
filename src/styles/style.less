@@ -12,6 +12,9 @@
 @font-size: 18px;
 @footer-size: (0.75 * @font-size);
 
+@import url('http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic');
+@import url('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css');
+
 html, body {
   height: 100%;
   width: 100%;
@@ -27,7 +30,7 @@ input, textarea {
 
 
 /* media query default values */
-#navbar {
+.navbar {
   margin-top: round(@top/2, 1);
   margin-left: round(@top/2, 1);
 }
@@ -37,7 +40,7 @@ input, textarea {
 @large: 1700px;
 
 @media (max-width: @small) {
-  #navbar {
+  .navbar {
     display: none;
   }
   .container {
@@ -48,7 +51,7 @@ input, textarea {
   }
 }
 @media (min-width: (@small+1)) and (max-width: @medium) {
-  #navbar {
+  .navbar {
     font-size: 14px;
     margin-top: round(@top/7, 1);
     margin-left: 0;
@@ -110,7 +113,7 @@ the content blocks */
   border-radius: @radius;
 }
 
-#navbar {
+.navbar {
   position: fixed;
   z-index: 1;
   ul {

@@ -5,13 +5,15 @@ export default class Navbar extends React.Component {
 
   render() {
     return (
-      <ul>
-        <a href="#">Education</a>
-        <a href="#">Developer</a>
-        <a href="#">Business-person</a>
-        <a href="#">Resume</a>
-        <a href="#">Contact</a>
-      </ul>
+      <div className="navbar">
+        <ul>
+          <li><a href="#">Education</a></li>
+          <li><a href="#">Developer</a></li>
+          <li><a href="#">Business-person</a></li>
+          <li><a href="#">Resume</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
     );
   }
 
