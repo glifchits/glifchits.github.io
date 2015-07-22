@@ -44,15 +44,40 @@ export default class Content extends React.Component {
           taken accounting classes, business law, and so forth.
         </Section>
         <Section id="resume">
-          If you like, you can take a look at my resume below.
+          <p>If you like, you can take a look at my resume below.</p>
+          <br/>
+          <a href="george-lifchits-resume.pdf">Click</a>
+          for a PDF version to view in full screen)
+          <a className="resume" href="george-lifchits-resume.pdf">
+            <img src="images/resume.jpg" />
+          </a>
         </Section>
         <Section id="contact">
-          You can connect with me on:
-
-          Please contact me with employment opportunities, constructive feedback,
-          YouTube videos of amazing bass players, or for any reason whatsoever!
-          I love talking to people and would equally love to hear from you. Connect
-          with me in the way you're most comfortable with.
+          <p>You can connect with me on:</p>
+          <ul>
+            <li>
+              <i className="fa fa-linkedin-square" />
+              <a href="http://ca.linkedin.com/in/georgelifchits/">LinkedIn</a>,
+            </li>
+            <li>
+              <i className="fa fa-github" />
+              <a href="https://github.com/glifchits">Github</a>,
+            </li>
+            <li>
+              <i className="fa fa-facebook-square" />
+              <a href="https://www.facebook.com/george.lifchits">Facebook</a>, or
+            </li>
+            <li>
+              <i className="fa fa-envelope" />
+              <a href="mailto:me@georgelifchits.ca">email</a>.
+            </li>
+          </ul>
+          <p>
+            Please contact me with employment opportunities, constructive feedback,
+            YouTube videos of amazing bass players, or for any reason whatsoever!
+            I love talking to people and would equally love to hear from you. Connect
+            with me in the way you're most comfortable with.
+            </p>
         </Section>
       </main>
     );
