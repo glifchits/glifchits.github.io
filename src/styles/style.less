@@ -44,7 +44,7 @@ input, textarea {
     display: none;
   }
   .container {
-    > section, > header {
+    section, header {
       padding: @top 7%;
       text-align: left;
     }
@@ -58,7 +58,7 @@ input, textarea {
     width: 60px;
   }
   .container {
-    > section, > header {
+    section, header {
       padding: @top 15%;
     }
   }
@@ -66,7 +66,7 @@ input, textarea {
 @media (min-width: (@medium+1)) and (max-width: @large) {
   // uses navbar default
   .container {
-    > section, > header {
+    section, header {
       padding: @top 25%;
     }
   }
@@ -74,7 +74,7 @@ input, textarea {
 @media (min-width: (@large+1)) {
   // uses navbar default
   .container {
-    > section, > header {
+    section, header {
       padding: @top 30%;
     }
   }
@@ -87,9 +87,14 @@ the content blocks */
   padding: 0;
   font-size: @font-size;
   line-height: round((@font-size * 1.7), 1);
-  text-align: justify;
   > div, > header {
     display: block;
+  }
+}
+
+.container section {
+  p {
+    text-align: justify
   }
 }
 
