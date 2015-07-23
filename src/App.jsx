@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './Navbar';
 import Header from './Header';
 import Content from './Content';
+import Footer from './Footer';
 
 require('./styles/normalize.css');
 require('./styles/style.less');
@@ -16,6 +17,7 @@ export default class App extends React.Component {
         <div className="container">
           <Header />
           <Content />
+          <Footer />
         </div>
       </div>
     )
