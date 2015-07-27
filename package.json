@@ -31,5 +31,8 @@
   "bugs": {
     "url": "https://github.com/glifchits/glifchits.github.io/issues"
   },
-  "homepage": "http://glifchits.github.io"
+  "homepage": "http://glifchits.github.io",
+  "dependencies": {
+    "jquery": "^2.1.4"
+  }
 }
