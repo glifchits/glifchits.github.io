@@ -1,17 +1,4 @@
-@darken: #777;
-@green: #00E68A;
-@blue: #008AE6;
-@red: #C94D4D;
-@yellow: #FFFF7E;
-@purple: #C45CC4;
-@orange: #FFAD33;
-
-@top: 4em; // padding on top of the containers
-@dim: 6em; // the dimensions of the picture
-@bgsize: 80%;
-@font-size: 18px;
-@footer-size: (0.75 * @font-size);
-
+@import "common";
 @import url('http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic');
 @import url('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css');
 
@@ -25,7 +12,7 @@ html, body {
 /* mobile form elements reset */
 input, textarea {
   -webkit-appearance: none;
-  -webkit-border-radius: 0;
+  -webkit-border-radius: 1;
 }
 
 
@@ -80,71 +67,6 @@ input, textarea {
   }
 }
 
-/* container > div is a "content block". The media queries
-here define the padding size which affects the size of
-the content blocks */
-.container {
-  padding: 0;
-  font-size: @font-size;
-  line-height: round((@font-size * 1.7), 1);
-  > div, > header {
-    display: block;
-  }
-}
-
-.container section {
-  p {
-    text-align: justify
-  }
-}
-
-.colouring (@colour) {
-  @darkened: (@colour - @darken);
-  background-color: @colour;
-  color: @darkened;
-  a {
-    text-decoration: none;
-    color: (@darkened - #222);
-    border-bottom: 1px solid @darkened;
-    &:hover {
-      border-bottom: 2px solid @darkened;
-    }
-  }
-}
-
-.border-radius (@radius) {
-  -webkit-border-radius: @radius;
-  -moz-border-radius: @radius;
-  border-radius: @radius;
-}
-
-.navbar {
-  position: fixed;
-  z-index: 1;
-  ul {
-    position: relative;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    a {
-      text-decoration: none;
-    }
-    li {
-      box-sizing: border-box;
-      display: block;
-      padding: 10px 15px;
-      color: black;
-      opacity: 0.7;
-      border-left: 0px solid black;
-      transition: border-left 0.2s;
-      &:hover, &:focus {
-        cursor: pointer;
-        border-left: 6px solid black;
-      }
-    }
-  }
-}
-
 .alert {
   display: none;
   position: fixed;
@@ -164,7 +86,7 @@ the content blocks */
     box-shadow:         0px @bottom @blur rgba(0, 0, 0, @opacity);
     background-color: rgba(255,255,255,0.85);
     border: 1px solid rgba(0,0,0,0.5);
-    .border-radius(4px);
+    border-radius: 4px;
     .close {
       float: right;
       color: #777;
@@ -176,115 +98,4 @@ the content blocks */
       color: #222;
     }
   }
-}
-
-.picture {
-  height: @dim;
-  width: @dim;
-  position: relative;
-  background-color: #fff;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: (0.82 * @dim);
-  top: -(@top + 0.5 * @dim);
-  margin: 0 auto;
-  margin-bottom: (-1 * @dim);
-  .border-radius(50%);
-  border: 3px solid #fff;
-}
-
-header {
-  .colouring (@green);
-  text-align: center !important;
-  h1 {
-    font-size: 50px;
-    line-height: 50px;
-  }
-}
-#education {
-  .colouring (@blue);
-  .picture {
-    // the root is the full url without the size parameter
-    @root: 'https://en.gravatar.com/avatar/99167ac3f433a7560367cb432109871d?s=';
-    // for the URL used, the size parameter is set based on the dimension variable
-    @pic-size: 200px;
-    @url: "@{root}@{pic-size}";
-    background-image: url(@url);
-    background-size: @dim;
-  }
-}
-
-#dev-skills {
-  .colouring (@purple);
-  .picture {
-    background-image: url('../images/laptop.png');
-  }
-}
-
-#biz-skills {
-  .colouring (@red);
-  .picture {
-    background-image: url('../images/business.png');
-  }
-}
-
-#resume {
-  .colouring(@orange);
-  .picture {
-    background-image: url('../images/pencil.png');
-    background-size: 22%;
-    -moz-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-  a.resume {
-    border: none;
-    img {
-      width: 100%;
-    }
-  }
-}
-
-.my-box-shadow(@colour, @size: 1px, @blur: 0px) {
-  -webkit-box-shadow: inset 0px 0px @blur @size @colour;
-  -moz-box-shadow: inset 0px 0px @blur @size @colour;
-  box-shadow: inset 0px 0px @blur @size @colour;
-}
-
-.transition(@type, @time, @easing) {
-  -webkit-transition: @type @time @easing;
-  -o-transition: @type @time @easing;
-  -moz-transition: @type @time @easing;
-  -ms-transition: @type @time @easing;
-  -kthtml-transition: @type @time @easing;
-  transition: @type @time @easing;
-}
-
-#contact {
-  @contact-col: @yellow;
-  .colouring (@contact-col);
-  .picture {
-    background-image: url('../images/contact.png');
-  }
-  ul {
-    padding: 0;
-    list-style: none;
-  }
-  li {
-    display: inline-block;
-    padding-right: 0.3em;
-  }
-  i.fa {
-    width: 20px;
-    padding-right: 0.2em;
-  }
-}
-
-footer {
-  .colouring (#fff);
-  text-align: center;
-  font-size: @footer-size;
-  padding: (0.2 * @top);
 }

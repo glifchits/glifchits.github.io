@@ -1,5 +1,7 @@
 import React from 'react';
 
+require('./styles/Footer.less');
+
 
 export default class Footer extends React.Component {
 

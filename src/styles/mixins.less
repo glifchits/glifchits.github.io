@@ -1,0 +1,15 @@
+/* mixin for applying colours to a section */
+.colouring (@colour) {
+  @dark-colour: (@colour - #777);
+  @darker-colour: (@colour - #999);
+  background-color: @colour;
+  color: @dark-colour;
+  a {
+    text-decoration: none;
+    color: @darker-colour;
+    border-bottom: 1px solid @dark-colour;
+    &:hover {
+      border-bottom: 2px solid @dark-colour;
+    }
+  }
+}

@@ -1,5 +1,7 @@
 import React from 'react';
 
+require('./styles/Header.less');
+
 
 export default class Header extends React.Component {
 

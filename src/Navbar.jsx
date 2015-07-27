@@ -1,5 +1,7 @@
 import React from 'react';
 
+require('./styles/Navbar.less');
+
 
 export default class Navbar extends React.Component {
 

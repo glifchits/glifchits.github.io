@@ -1,5 +1,7 @@
 import React from 'react';
 
+require('./styles/Sections.less');
+
 
 class Section extends React.Component {
 
