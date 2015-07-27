@@ -26,7 +26,7 @@ module.exports = {
     loaders: [
       { test: /\.jsx?$/, loader: 'react-hot!babel?stage=1', exclude: /node_modules/ },
       { test: /\.css/, loader: 'style!css' },
-      { test: /\.less$/, loader: 'style!css!less' },
+      { test: /\.less$/, loader: 'style!css!autoprefixer!less' },
       { test: /\.png/, loader: 'file' },
     ]
   }
