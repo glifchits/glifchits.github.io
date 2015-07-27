@@ -9,11 +9,11 @@ export default class Navbar extends React.Component {
     return (
       <div className="navbar">
         <ul>
-          <li><a href="#">Education</a></li>
-          <li><a href="#">Developer</a></li>
-          <li><a href="#">Business-person</a></li>
-          <li><a href="#">Resume</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#dev-skills">Developer</a></li>
+          <li><a href="#biz-skills">Business-person</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     );
