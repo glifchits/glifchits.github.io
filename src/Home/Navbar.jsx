@@ -1,7 +1,7 @@
 import React from 'react';
 import $ from 'jquery';
 
-require('./styles/Navbar.less');
+require('../styles/Navbar.less');
 
 
 class HashLink extends React.Component {

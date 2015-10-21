@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router';
+import Navbar from './Navbar';
 
-require('./styles/Sections.less');
+require('../styles/Sections.less');
 
 
 class Section extends React.Component {
@@ -23,6 +25,10 @@ export default class Content extends React.Component {
   render() {
     return (
       <main>
+        <Navbar />
+        <section>
+          Check out my blog <Link to="/blog">here!</Link>
+        </section>
         <Section id="education">
           <p>
             I'm a student at Wilfrid Laurier University in Ontario, Canada. I'm in
