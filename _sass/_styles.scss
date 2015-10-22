@@ -164,9 +164,8 @@ header {
 #education {
   @include colouring($blue);
   .picture {
-    // the root is the full url without the size parameter
     // the s= defines the size of the image requested
-    $root: 'https://en.gravatar.com/avatar/99167ac3f433a7560367cb432109871d?s=200px';
+    $url: 'https://en.gravatar.com/avatar/99167ac3f433a7560367cb432109871d?s=200px';
     background-image: url($url);
     background-size: $dim;
   }
