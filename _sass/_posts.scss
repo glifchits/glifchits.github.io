@@ -1,0 +1,18 @@
+.posts {
+  max-width: 700px;
+  margin: 3em auto;
+
+  .post-item {
+    list-style: none;
+
+    .post-link {
+      display: block;
+      font-size: 1.3em;
+    }
+    .post-meta {
+      display: block;
+      font-size: 0.9em;
+      color: #888;
+    }
+  }
+}
