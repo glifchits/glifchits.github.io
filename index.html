@@ -18,17 +18,13 @@ layout: default
 
 <section id="blog">
   <div class="picture"></div>
-  <ul class="post-list">
-    {% for post in site.posts %}
-    <li>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-      <h2>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h2>
-    </li>
-    {% endfor %}
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-  </ul>
+  {% assign post = site.posts.first %}
+  <span>
+    Latest blog post:
+    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> on
+    {{ post.date | date: "%b %-d, %Y" }}
+  </span>
+  <span class="blog-link">See my other blog posts <a href="/blog">here</a></span>
 </section>
 <section id="education">
   <div class="picture"></div>

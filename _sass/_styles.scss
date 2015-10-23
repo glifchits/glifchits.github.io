@@ -173,6 +173,10 @@ header {
     background-image: url($url);
     background-size: $dim;
   }
+  span {
+    display: block;
+    margin: 1em 0;
+  }
 }
 
 #education {
