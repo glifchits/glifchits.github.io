@@ -1,5 +1,6 @@
 .posts-container {
-  background-color: #008AE6;
+  @include colouring($blue);
+
   padding: 3em;
 
   .posts {
@@ -12,13 +13,11 @@
     margin: 1.2em 0;
 
     .post-link {
-      display: block;
       font-size: 1.3em;
     }
     .post-meta {
       display: block;
       font-size: 0.9em;
-      color: #888;
     }
   }
 }
