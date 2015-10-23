@@ -1,5 +1,5 @@
 .post-container {
-  @include colouring($blue);
+  @include colouring(lighten($blue, 10%));
   padding: 4em 0 !important;
 }
 
