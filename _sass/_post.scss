@@ -1,11 +1,14 @@
 .post-container {
   @include colouring($blue);
+  padding: 4em 0 !important;
 }
 
 .post {
   max-width: 750px;
+  margin: 0 auto;
 
   .post-content {
+    padding-top: 2em;
     h1 {
       font-weight: bold;
       font-size: 1.3em;
