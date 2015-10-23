@@ -71,7 +71,9 @@ the content blocks */
   padding: 0;
   font-size: $font-size;
   line-height: round($font-size * 1.7);
-  text-align: justify;
+  p {
+    text-align: justify;
+  }
   > div, > header {
     display: block;
   }
