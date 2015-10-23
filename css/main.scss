@@ -43,6 +43,36 @@ $on-laptop:        800px;
 }
 
 
+// Custom variables
+$darken: #777;
+$green: #00E68A;
+$blue: #008AE6;
+$red: #C94D4D;
+$yellow: #FFFF7E;
+$purple: #C45CC4;
+$orange: #FFAD33;
+
+$top: 4em; // padding on top of the containers
+$dim: 6em; // the dimensions of the picture
+$bgsize: 80%;
+$font-size: 18px;
+$footer-size: (0.75 * $font-size);
+
+
+@mixin colouring($colour) {
+  $darkened: ($colour - $darken);
+  background-color: $colour;
+  color: $darkened;
+  a {
+    text-decoration: none;
+    color: ($darkened - #222);
+    border-bottom: 1px solid $darkened;
+    &:hover {
+      border-bottom: 2px solid $darkened;
+    }
+  }
+}
+
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
