@@ -1,16 +1,14 @@
-.post {
-  margin: 10px auto;
-  padding: 0 6%;
-  max-width: 750px;
+.post-container {
+  @include colouring($blue);
+}
 
-  .post-title {
-    margin: 1em 0 0.2em;
-  }
+.post {
+  max-width: 750px;
 
   .post-content {
     h1 {
       font-weight: bold;
-      font-size: 1.4em;
+      font-size: 1.3em;
     }
   }
 }
