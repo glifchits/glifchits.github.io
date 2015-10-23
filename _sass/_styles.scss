@@ -178,8 +178,7 @@ header {
 #education {
   @include colouring($purple);
   .picture {
-    background-image: url('../images/laptop.png');
-    background-size: $dim;
+    background-image: url('../images/school.png');
   }
 }
 
