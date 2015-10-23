@@ -1,16 +1,18 @@
 ---
 layout: default
 ---
-<ul class="posts">
-{% for post in site.posts %}
-<li class="post-item">
-  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-  <span clas="post-meta">
-    {{ post.date | date: "%b %-d, %Y" }}
-    {% if post.author %}
-    | {{ post.author }}
-    {% endif %}
-  </span>
-</li>
-{% endfor %}
-</ul>
+<div class="posts-container">
+  <ul class="posts">
+  {% for post in site.posts %}
+  <li class="post-item">
+    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    <span class="post-meta">
+      {{ post.date | date: "%b %-d, %Y" }}
+      {% if post.author %}
+      | {{ post.author }}
+      {% endif %}
+    </span>
+  </li>
+  {% endfor %}
+  </ul>
+</div>
