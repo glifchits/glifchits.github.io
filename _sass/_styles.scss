@@ -164,7 +164,8 @@ header {
     }
   }
 }
-#education {
+
+#blog {
   @include colouring($blue);
   .picture {
     // the s= defines the size of the image requested
@@ -174,22 +175,30 @@ header {
   }
 }
 
-#dev-skills {
+#education {
   @include colouring($purple);
+  .picture {
+    background-image: url('../images/laptop.png');
+    background-size: $dim;
+  }
+}
+
+#dev-skills {
+  @include colouring($red);
   .picture {
     background-image: url('../images/laptop.png');
   }
 }
 
 #biz-skills {
-  @include colouring($red);
+  @include colouring($orange);
   .picture {
     background-image: url('../images/business.png');
   }
 }
 
 #resume {
-  @include colouring($orange);
+  @include colouring($yellow);
   .picture {
     background-image: url('../images/pencil.png');
     background-size: 22%;
@@ -208,8 +217,7 @@ header {
 }
 
 #contact {
-  $contact-col: $yellow;
-  @include colouring($contact-col);
+  @include colouring($green);
   .picture {
     background-image: url('../images/contact.png');
   }
