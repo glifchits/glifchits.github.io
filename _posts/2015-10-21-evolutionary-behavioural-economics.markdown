@@ -3,7 +3,7 @@ published: true
 title: Evolutionary Behavioural Economics
 layout: post
 ---
-[Please, Not Another Bias! The Problem with Behavioral Economics](http://evonomics.com/please-not-another-bias-the-problem-with-behavioral-economics/) is a transcript of a talk given by Jason Collins. In it, he discusses the link between behavioural economics and evolutionary biology. Perhaps "link" is weak – I think Collins is suggesting that behavioural economics is really a subfield of evolutionary biology.
+[Please, Not Another Bias! The Problem with Behavioral Economics](http://evonomics.com/please-not-another-bias-the-problem-with-behavioral-economics/) is a transcript of a talk given by Jason Collins. In it, he discusses the link between behavioural economics and evolutionary biology. Perhaps "link" is weak -- I think Collins is suggesting that behavioural economics is really a subfield of evolutionary biology.
 
 Its a great read which raises plenty of thought provoking examples. In an attempt to crystallize my own understanding of the article, I'll try to give you, dear reader, a concise summary of each point, and provide a little bit of critique where I found some. Let me know if I interpreted anything wrong, and please feel free to challenge me on my critiques!
 
@@ -41,7 +41,7 @@ Collins seems to suggest (maybe not exclusively) that mating opportunities creat
 
 This was my favourite point. Peacocks risk being noticed and eaten by virtue of having a flashy tail, so why have they evolved to keep those tails? The evolutionary reasoning is that it indicates to potential mates that they are the **fittest**; despite being attractive prey, they've survived, and that makes them fit candidates for reproduction.
 
-Collins' main example of human costly signalling is **conspicuous consumption**. Why would people ever spend ridiculous amounts of money on an impractical watch or an unreliable sports car? Its because those things are (costly) signals to potential mates. Costly signals are strong signals because they are costly – its uncommon that "unfit" individuals have the resources to waste on costly signals.
+Collins' main example of human costly signalling is **conspicuous consumption**. Why would people ever spend ridiculous amounts of money on an impractical watch or an unreliable sports car? Its because those things are (costly) signals to potential mates. Costly signals are strong signals because they are costly -- its uncommon that "unfit" individuals have the resources to waste on costly signals.
 
 # Concluding thoughts
 
