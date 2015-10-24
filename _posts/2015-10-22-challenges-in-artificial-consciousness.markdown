@@ -16,7 +16,9 @@ The most effective neural networks are trained on homogenous data, for a very sp
 
 # Instinct is an abundant, precious set of training data
 
-After millions of years of human evolution, we've learned from the experiences of our fittest ancestors. Its given us some of our most powerful reflexes, and taught us lots of important heuristics for decision making. Its hard to fathom the kind of data we'd need to begin teaching computers these critical innate behaviours. The alternative to constructing the raw "instincts" dataset would be to enumerate and define all of the knowledge and decision heuristics that humans use. Even a representative subset of these would be very hard to build, requiring contributions from neuroscience, psychology, anthropology, behavioural science, and countless other fields.
+After millions of years of human evolution, we've learned from the experiences of our fittest ancestors. Innate abilities are the origin of some of our most powerful reflexes, and provide us with lots of important heuristics for decision making. They may have even provide faculties to help us [understand different languages](http://qz.com/529865/study-a-fascinating-aspect-of-language-looks-to-be-biologically-hardwired-in-our-brains/).
+
+Its hard to fathom the kind of data we'd need to begin teaching computers these critical innate behaviours. The alternative to constructing the raw "instincts" dataset would be to enumerate and define all of the knowledge and decision heuristics that humans use. Even a representative subset of these would be very hard to build, requiring contributions from neuroscience, psychology, anthropology, behavioural science, and countless other fields.
 
 # Encoding unstructured data is hard
 
