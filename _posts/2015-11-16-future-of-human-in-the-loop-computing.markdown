@@ -1,6 +1,6 @@
 ---
 published: true
-title: The future of "human-in-the-loop" computing
+title: The future of “human-in-the-loop” computing
 layout: post
 ---
 Lukas Biewald recently wrote an [opinion piece](http://www.computerworld.com/article/3004013/robotics/why-human-in-the-loop-computing-is-the-future-of-machine-learning.html) on how “human-in-the-loop computing” is the future of machine learning. He focuses on several examples of how human-in-the-loop computing happens right now, so I wanted to think about how human-in-the-loop computing will evolve over time.
