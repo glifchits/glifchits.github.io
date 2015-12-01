@@ -128,9 +128,9 @@ blockquote {
 pre,
 code {
     font-size: 15px;
-    border: 1px solid $grey-color-light;
+    font-family: "Monaco", monospace, serif;
     border-radius: 3px;
-    background-color: #eef;
+    background-color: rgba(#eef, 0.3);
 }
 
 code {
