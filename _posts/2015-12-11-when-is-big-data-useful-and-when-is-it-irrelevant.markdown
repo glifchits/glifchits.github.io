@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: When is big data useful, and when is it irrelevant?
 layout: post
 ---
