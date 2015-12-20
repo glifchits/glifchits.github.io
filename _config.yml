@@ -2,9 +2,8 @@
 title: George Lifchits
 email: me@georgelifchits.ca
 description: > # this means to ignore newlines until "baseurl:"
-  Personal website for George Lifchits. Waterloo, Canada based web developer
-  with a business skillset. Graduate of Wilfrid Laurier University and co-founder
-  at Beagle.ai.
+  Web developer with a business skillset. Based in Waterloo, Canada.
+  Graduate of Wilfrid Laurier University and co-founder at Beagle.ai.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://georgelifchits.ca" # the base hostname & protocol for your site
 github_username:  glifchits
