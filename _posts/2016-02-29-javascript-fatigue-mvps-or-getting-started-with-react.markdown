@@ -1,6 +1,6 @@
 ---
 published: true
-title: Javascript fatigue, MVPs, or: getting started with React
+title: Javascript fatigue, MVPs, or Getting started with React
 layout: post
 tags: [react, webdev, javascript]
 ---
