@@ -14,4 +14,6 @@ If you want to start doing React, check out the project [jarsbe/react-simple](ht
 
 My first React project got started much in the same way: one `<script>` for React core, and another for the in-browser JSX transformer. Webpack, Babel, React Router, and their ilk fell into the project very naturally as the product gradually fleshed out, and those technologies became necessary.
 
-This reminds me of [that image](https://d13yacurqjgara.cloudfront.net/users/377435/screenshots/1753131/redisflat_mvp.png) of how to build an MVP -- it starts with a skateboard, then evolves into a bicycle, then into a car. Starting with axles, a chassis, and finally a car is not the way to go, and I think that's what Javascript fatigue is feeling like for a lot of people out there. Fortunately, it doesn't have to be this way!
+![MVP](/images/blog/mvp.png "MVP")
+
+To me, Javascript fatigue feels like picking out an engine, transmission, and tires when I just want to build a skateboard. Fortunately, it doesn't have to be this way!
