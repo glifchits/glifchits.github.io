@@ -3,6 +3,11 @@ published: true
 title: Paul Graham's harmful essay on economic inequality
 layout: post
 ---
+
+**TL;DR**: Paul Graham tries to explain that taxing the wealthy does not solve the root economic problems that we commonly attribute to inequality. I maintain that taxation is the best solution we have, so by trying to brush that off the table, Graham's view is ultimately harmful to society.
+
+----
+
 Today I read Paul Graham's [essay on Economic Inequality](http://www.paulgraham.com/ineq.html), Ezra Klein's [response to Graham](http://www.vox.com/2016/1/6/10722302/paul-graham-inequality), and Graham's [response to Klein](http://www.paulgraham.com/klein.html). I leaned on side Graham at first. Then I got into a heated discussion with my good friend, and now I believe that Graham's opinion on economic inequality is outright harmful.
 
 Graham says economic inequality is not clear and simple, so our conversation about economic inequality should not be clear and simple. Inequality is a big topic, and it is probably best thought of as a symptom and not the cause. For example, poverty is bad -- let's attack poverty, and leave inequality alone.
