@@ -20,8 +20,13 @@
     }
   }
 
-  img {
+  p > img, figure {
     width: 80%;
     margin: 5px 10%;
+
+    figcaption {
+      line-height: 1.5em;
+      margin: 1em 0 1.5em;
+    }
   }
 }
