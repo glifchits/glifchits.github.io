@@ -42,7 +42,7 @@ has been fully attended to. And even though the value I extract from this dish
 is virtually priceless, the cost of this perfect meal is just around $6.50 CAD.
 
 <figure>
-  <img src="/images/blog/daal.JPG" alt="daal chawal"></img>
+  <img src="/images/blog/daal.JPG" alt="daal chawal">
   <figcaption>
     Daal chawal, taken July 14, 2014. I apologize that this image is blurry: the
     likely explanation is that I was so stunned at the time that my skills in
