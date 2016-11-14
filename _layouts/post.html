@@ -12,7 +12,12 @@ layout: default
   <div class="post">
 
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    <p class="post-meta">
+      <div>{{ page.date | date: "%b %-d, %Y" }}</div>
+      {% if page.location %}<div><i class="fa fa-map-pin"></i> {{ page.location }}</div>{% endif %}
+      {% if page.author %} • {{ page.author }}{% endif %}
+      {% if page.meta %} • {{ page.meta }}{% endif %}
+    </p>
 
     <article class="post-content">
       {{ content }}
