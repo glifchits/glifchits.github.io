@@ -6,7 +6,7 @@ location: Haifa, Israel
 layout: post
 ---
 
-Yesterday, before Yom Kippur started and all of Israel shut down, my family and I managed to squeeze in a walking tour of the Baha’i Gardens in Haifa. This landmark essentially consists of lush and lavish terraces, fountains, marble railings, exotic fauna, and impeccable landscaping. Before the tour started, I knew nothing about Baha’i. Given the extravagant setting, I expected Baha’i to be a wacky religion that has successfully brainwashed enough wealthy followers to accumulate vast riches. I was very wrong!
+Yesterday, before Yom Kippur started and all of Israel shut down, my family and I managed to squeeze in a walking tour of the Baha’i Gardens in Haifa. This landmark essentially consists of lush and lavish terraces, fountains, marble railings, exotic flora, and impeccable landscaping. Before the tour started, I knew nothing about Baha’i. Given the extravagant setting, I expected Baha’i to be a wacky religion that has successfully brainwashed enough wealthy followers to accumulate vast riches. I was very wrong!
 
 From the tour, I learned that Baha’i is essentially a religion that above all, emphasizes world peace. Baha’i believe that all religions in the world are fundamentally boil down to the same principles, and that there exist no reasonable differences between people. Baha’i have a set of principles which were described by the prophet. Here they are:
 
