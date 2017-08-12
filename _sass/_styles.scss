@@ -144,7 +144,7 @@ header {
   @include colouring($blue);
   .picture {
     // the s= defines the size of the image requested
-    $url: 'https://en.gravatar.com/avatar/99167ac3f433a7560367cb432109871d?s=200px';
+    $url: '../images/me.jpg';
     background-image: url($url);
     background-size: $dim;
   }
