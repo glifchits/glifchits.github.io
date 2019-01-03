@@ -19,19 +19,12 @@ div.container {
 
 header {
   padding: 2em 0 1.5em;
+  text-align: center;
 }
 
 ul {
   margin: 0;
   padding: 0;
-}
-
-header.home {
-  text-align: center;
-}
-
-header.flat #navbar {
-  display: inline-block;
 }
 
 header #navbar ul {
