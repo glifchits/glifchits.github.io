@@ -1,23 +1,25 @@
 ---
 layout: default
 ---
-<div id="navbar">
-  <ul>
-    <a href="/"> <li>Home</li> </a>
-    <a href="/blog"> <li>Blog</li> </a>
-  </ul>
-</div>
-
+<header class="flat">
+  <h1>George Lifchits</h1>
+  <div id="navbar">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/blog">Blog</a></li>
+    </ul>
+  </div>
+</header>
 <section class="post-container">
   <div class="post">
 
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">
-      <div>{{ page.date | date: "%b %-d, %Y" }}</div>
-      {% if page.location %}<div><i class="fa fa-map-pin"></i> {{ page.location }}</div>{% endif %}
+    <div class="post-meta">
+      {{ page.date | date: "%b %-d, %Y" }}
+      {% if page.location %} from {{ page.location }}{% endif %}
       {% if page.author %} • {{ page.author }}{% endif %}
       {% if page.meta %} • {{ page.meta }}{% endif %}
-    </p>
+    </div>
 
     <article class="post-content">
       {{ content }}

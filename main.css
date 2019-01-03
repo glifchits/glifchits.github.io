@@ -1,0 +1,95 @@
+body {
+  margin: 0 auto;
+  padding: 0 10px;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  line-height: 1.6;
+  color: #222222;
+
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+div.container {
+  flex: 1;
+}
+
+header {
+  padding: 2em 0 1.5em;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+header.home {
+  text-align: center;
+}
+
+header.flat #navbar {
+  display: inline-block;
+}
+
+header #navbar ul {
+  list-style: none;
+}
+
+header #navbar ul li {
+  display: inline-block;
+  padding: 5px;
+}
+
+header h1 {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+a.resume > img {
+  width: 100%;
+}
+
+ul.posts {
+  list-style-type: none;
+}
+
+ul.posts li.post-item {
+  margin: 10px 0;
+}
+
+div.profilepic {
+  margin: 0 auto;
+  background-image: url("/images/me.jpg");
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  border-radius: 50%;
+}
+
+footer {
+  margin: 1.2em 0;
+  text-align: center;
+  font-size: 14px;
+  color: #888888;
+}
+
+blockquote {
+  font-size: 94%;
+  color: #555555;
+}
+
+.post .post-title {
+  margin-bottom: 5px;
+  line-height: 1.1;
+}
+.post-meta {
+  color: #555555;
+}
+
+.post img {
+  width: 100%;
+}
