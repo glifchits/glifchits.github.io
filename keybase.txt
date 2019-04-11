@@ -1,0 +1,74 @@
+==================================================================
+https://keybase.io/george
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://georgelifchits.ca
+  * I am george (https://keybase.io/george) on keybase.
+  * I have a public key with fingerprint DE09 D386 BFA4 87FA D80A  8522 EE96 80CA 290E A9CD
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101710af83020d86bb8dd08f5c0336226c3336a9bb61bb92d33f2ec4cffdee6c8460a",
+      "fingerprint": "de09d386bfa487fad80a8522ee9680ca290ea9cd",
+      "host": "keybase.io",
+      "key_id": "ee9680ca290ea9cd",
+      "kid": "0101710af83020d86bb8dd08f5c0336226c3336a9bb61bb92d33f2ec4cffdee6c8460a",
+      "uid": "c4879cce96563ab43c3bc09eccb86600",
+      "username": "george"
+    },
+    "service": {
+      "hostname": "georgelifchits.ca",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1554996408,
+  "expire_in": 157680000,
+  "prev": "dc3ab6e8525ce24d4fb2e6521c26a5343c3635568f867ca591902a3aaffec1ea",
+  "seqno": 15,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.0
+Comment: https://keybase.io/crypto
+
+yMNCAnicrVJ/UBRlGL5L8ID44YAxFAS4QWNB597u7bJ7+OMaCo+CyiHopBtvdr/9
+9m45uD1vD+g6IiA8LSczRAMdoWhwAlLrJidSI8B0KgEZk8nBGYocsgSBKBnTpvqW
+qT+a6c++f9753vd5n/d5n+/7PGaFJko7d6D+q4diu0e05wcPVWlsx219AYyXBT9m
+CmAuuBxghQAVn90lCZgJww24IceAcyJD4gQuMDTPM4KAMyIFcJKkCYIGJIocy/O0
+gedZQiBJkYDACERRgJAGjJHGOSwbEyW3A3o9XsntQ7QCxFmBRGwiZ2RyRE5gcI6h
+CAJClmZwwBEsDjkWCKjRKStqBxLHcwrUSzLKoYt9Wd5/4P9n3VXLdACpZAFA0yia
+5HgjCUge4CwEgGdoGsdVoAK9bq4SIrQDyl4HxF7KxlCuWgJQtVXd41/1CkkETsmn
+6IE6x+OVfTKQK1DZ6fN5FJPa7vN7VHwN5O1/M9l5yS0gK1FHNfQqkuzGTAaEBD5J
+pTZQlJFlaSPOZGPwBY/khXZJRVA5yCZ01DmwWn0AgNagIfKcApAwCkaRJyBNEQZA
+0BxFqgvSJEXRjMjQOYCjWAOLExzJcaIIgQGqihW43S2r3Egn50CciuRwc74qL9p8
+aNAWptFGaVaG36X+MU1U5Kp/ft5kQdwfD7fvpbj9P0aU5NWZXTeTtj2Zot/4QU5t
++eJkgjX1SEb/4Tqiz29yNTQPpqS/g9edqzgVeiQp78TRN4umAnW/Pv3Ehvzzq9uM
+w2Nbg+ey7vPXB3ILbSWNNrbn0KehHk/w7Dqh9rV0W1nHxvbc2PrI0bOXRl8FVdu0
+Cb0rH1v4TNl0JMa9by76pGtEO0qlpaXdtu6pvHLyVIuHK7s2NpOeT1uyLheEvxjU
+Xe8PTV/5Zgc5f+yyZdd090Lcbee3b398Qd91oyNR+TNkaXov60vx+ayP0pqHdYUl
+6b6U7Jb29Y/vznfWZFBrMtf0ZbYUV1tTtoR1lZeO/LRJV/6Wbrb7mS7z97fuOV0/
+v2rR3yjnDu/6Ldr+3A/9K652N0b+TBCzey5ubm5e+CL48i+aA7qh5NqDRbX83L7G
+tZ2pDfG3lrYfTazIEDqHEvscwu7M46Qz1H633tWbunRsnW5xsqPpeta7/Hj5A+N+
+cvrrxtLC4dnI1Am99UNuYmb6qfyLc5akzfap5rgZK3lp4E7p4WF65JM7O551VJ3p
+2fDGeMR8w6T5Rnjn6fVe/3emex+92VY5UyAv7e09OFBtTu64WvJK8X5jXsxac3lZ
+raT5vSk6oVXLlrWtDpto7Q/5g5P3Jz2YHygtHmA9RfE7i7YCy+ujDuX9iC2xge5r
+Z5KnzJoLrcGa8LGm+DrpxF83/7tb
+=z2iP
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/george
+
+==================================================================
