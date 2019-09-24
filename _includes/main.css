@@ -86,3 +86,10 @@ blockquote {
 .post img {
   width: 100%;
 }
+
+.post sup {
+  /* thanks https://stackoverflow.com/a/1530819 */
+  vertical-align: top;
+  position: relative;
+  top: -0.5em;
+}
