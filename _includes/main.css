@@ -93,3 +93,7 @@ blockquote {
   position: relative;
   top: -0.5em;
 }
+
+.footnotes {
+  word-wrap: break-word;
+}
