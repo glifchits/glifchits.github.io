@@ -39,7 +39,7 @@ Driving it for the first time gave me shpilkes. An initial feeling of ecstatic p
 
 I replaced the fuel filter, changed the spark plugs. I got a new battery and a proper hold-down for it. As I struggled to do these basic tasks, I kept driving the car on the short street in front of our house. Once, in 2nd gear, the car jerked and just died. Panicked, I tried to push the car the fifty or so meters back into my driveway. Neighbours I had never previously spoken to saw me struggling, and offered to help me push it back. That was a stressful little episode! Afterwards, I realized it was because the battery got slightly disconnected. What a disaster.
 
-After a few more tweaks, like fixing the broken odometer (a common failure for these cars), I became somewhat confident that it might be able to drive short distances. So I towed it to a local mechanic seeking the safety certification necessary to get license plates. I knew it didn't run right, but at least it ran, and without it trapped in my garage, I could more easily show it to mechanics.ye
+After a few more tweaks, like fixing the broken odometer (a common failure for these cars), I became somewhat confident that it might be able to drive short distances. So I towed it to a local mechanic seeking the safety certification necessary to get license plates. I knew it didn't run right, but at least it ran, and without it trapped in my garage, I could more easily show it to mechanics.
 
 The certification failed. A number of flaws were identified: seized brake calipers, poorly installed brake lines, a radiator fan not running, rusted and disintegrating suspension parts, and more. Lifted on the hoist, light was shined on the amount of the rust under the car.
 
