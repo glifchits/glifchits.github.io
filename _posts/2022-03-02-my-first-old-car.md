@@ -25,7 +25,7 @@ In the evenings after signing off of work, I grabbed a socket wrench and crawled
 
 In the early 70s, Porsche (actually an engineering consultancy firm) was hired by Volkswagen to develop a sports car. By reusing components that were mass-produced for use in VW and Audi vehicles, the prototype was economical. But in the midst of an oil crisis, VW decided not to invest in a new sports car, leaving the designs with Porsche.
 
-This new design was radically different from the vehicles that had made Porsche famous. Porsche cars had engines in the rear, but this one had the engine up front. Porsche engines were air-cooled, but this one was water-cooled. Porsche cars were known for performance, but this one had a rather meek engine previously used on an Audi truck.
+This new design was radically different from the vehicles that had made Porsche famous. Porsche cars had engines in the rear, but this one had the engine up front. Porsche engines were air-cooled, but this one was water-cooled. Porsche cars were known for performance, but this one had a rather meek engine previously used on an small Audi truck.
 
 For all of the aforementioned reasons, Porsche cars were distinctive, while this one was similar to every other economy car on the road. But for whatever reason, Porsche adopted the new design into their lineup and dubbed it the 924, a successor to the Porsche 914.
 
