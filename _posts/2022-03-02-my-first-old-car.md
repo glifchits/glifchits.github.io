@@ -15,7 +15,7 @@ Dreaming about owning a vintage Porsche 911 for many years now, this felt like t
 
 I felt visceral fear and anxiety that I would fail at achieving a dream. But almost as a snap decision, I decided that the pride of making the attempt would be worth more than the pain of failure. This still remains to be seen.
 
-To get my Porsche 924 on the road, I had to do a number of repairs. The first was replacing a rusted fuel tank with a refurbished replacement fuel tank. On the 924, this requires dropping the exhaust pipe, detaching the rear axles, dropping the transmission, and finally removing the fuel tank. Having never removed a bolt on any car before, this was trial by fire.
+To get my Porsche 924 on the road, I would have to do a number of repairs. The first was replacing a rusted fuel tank with a refurbished replacement fuel tank. On the 924, this requires dropping the exhaust pipe, detaching the rear axles, dropping the transmission, and finally removing the fuel tank. Having never removed a bolt on any car before, this would be trial by fire.
 
 I rented a U-Haul pickup and auto trailer, dragged my 924 back home, and with a bit of help I rolled it into my cramped garage.
 
