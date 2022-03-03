@@ -29,7 +29,7 @@ This new design was radically different from the vehicles that had made Porsche 
 
 For all of the aforementioned reasons, Porsche cars were distinctive, while this one was similar to every other economy car on the road. But for whatever reason, Porsche adopted the new design into their lineup and dubbed it the 924, a successor to the Porsche 914.
 
-Although it was a successful commercial product, the Porsche 924 was never respected by the Porsche community. With the later introduction of a 924 turbo, and eventually the 944, Porsche committed to this paradigm-shifting design, and those models gained more appreciation. But as a result, many 924s were simply neglected. Including the one I bought.
+Although it was a successful commercial product, the Porsche 924 was never respected by the Porsche community. With the later introduction of a 924 turbo, and eventually the 944, Porsche committed to this paradigm-shifting design, and those models gained more appreciation. But as a result, most 924 simplyl languished. Including the one I bought.
 
 ---
 
