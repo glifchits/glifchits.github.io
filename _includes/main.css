@@ -97,3 +97,11 @@ blockquote {
 .footnotes {
   word-wrap: break-word;
 }
+
+hr {
+  border: none;
+  height: 1px;
+  color: #bdbdbd;
+  background-color: #bdbdbd;
+  margin: 3em 1em;
+}
