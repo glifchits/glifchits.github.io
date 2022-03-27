@@ -105,3 +105,28 @@ hr {
   background-color: #bdbdbd;
   margin: 3em 1em;
 }
+
+/* papers */
+h3 {
+  margin-top: 3em;
+}
+.bibentry {
+  margin-top: 2em;
+  text-indent: -1.2em;
+  margin-left: 1.2em;
+  font-size: small;
+}
+.bibtex {
+  line-height: 1;
+  background-color: #f9f9f9;
+  padding: 1em;
+  white-space: pre-wrap;
+}
+details summary {
+  color: #888888;
+  font-size: small;
+  margin-left: 1.2em;
+}
+details summary:hover {
+  cursor: pointer;
+}
