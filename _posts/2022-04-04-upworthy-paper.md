@@ -1,5 +1,5 @@
 ---
-title: Upworthy Paper
+title: "Now available: our paper on the factors of Upworthy headline success"
 layout: post
 published: true
 ---
