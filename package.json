@@ -1,0 +1,19 @@
+{
+  "name": "glifchits.github.io",
+  "version": "1.0.0",
+  "description": "personal website and blog",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "jekyll serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glifchits/glifchits.github.io.git"
+  },
+  "author": "George Lifchits <me@georgelifchits.ca> (https://georgelifchits.ca/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/glifchits/glifchits.github.io/issues"
+  },
+  "homepage": "https://github.com/glifchits/glifchits.github.io#readme"
+}
