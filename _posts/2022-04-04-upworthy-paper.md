@@ -15,7 +15,7 @@ Check out our open access paper here: <a href="https://journals.plos.org/plosone
 <i>Cross-posted from [LinkedIn](https://www.linkedin.com/posts/georgelifchits_linguistic-effects-on-news-headline-success-activity-7046145751621513216-HA2X?utm_source=share&utm_medium=member_desktop)</i>
 
 <figure>
-  <img src="/images/blog/upworthy-headlines-coeff.png" alt="Upworthy headline analysis: logistic regression coefficients">
+  <img src="/images/blog/upworthy-headlines-coeff.PNG" alt="Upworthy headline analysis: logistic regression coefficients">
   <figcaption>
     Fig 2. Main regression analysis on the upworthy archive confirmatory and exploratory datasets.
 
